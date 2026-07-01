@@ -1,7 +1,7 @@
 # The AI System-Design Rubric (2026)
 
 > One reusable spine for the 45–60 min AI system-design round — applied across every worked answer in this folder.
-> Maintained by [Landed](https://landed.jobs) — scout AI-native roles, get **referred**, and run company-specific mock interviews.
+> Maintained by [Landed](https://landed.jobs) — daily matched AI-native roles, drafted application answers, and voice mock interviews.
 
 **Answer-first:** the AI system-design round is *not* a modeling quiz. It tests whether you can take a vague business goal and ride a fixed spine — **problem framing → data & eval set → retrieval/model choice → serving & latency → eval & guardrails → monitoring & cost → scaling** — under a clock, naming a **tradeoff and a number** at every box. HelloInterview calls the field "the wild west" precisely because the *framework* beats memorising any one company's answer. This page is that framework. Every design in `answers/` walks these seven stages in order.
 

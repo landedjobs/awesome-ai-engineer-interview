@@ -12,7 +12,7 @@
 [![Companies](https://img.shields.io/badge/companies-12-6C2BD9)](#the-companies)
 [![Visit Landed](https://img.shields.io/badge/Visit-Landed-6C2BD9?logo=rocket&logoColor=white)](https://landed.jobs)
 
-*Maintained by [Landed](https://landed.jobs) — scout AI-native roles, get **referred**, prep with mock interviews, and land the job.*
+*Maintained by [Landed](https://landed.jobs) — daily AI-native job matches, agent help with every application, and mock-interview prep.*
 
 </div>
 
@@ -93,7 +93,7 @@ Every question row in a company file is labeled. We never invent questions; repr
 
 <div align="center">
 
-### Don't just apply. Get **referred**, get **prepped**, get **Landed**.
+### Stop spraying. Get **matched**, get **prepped**, get **Landed**.
 
 [![Get Started](https://img.shields.io/badge/Get%20Started%20Free-→-6C2BD9?style=for-the-badge)](https://landed.jobs)
 

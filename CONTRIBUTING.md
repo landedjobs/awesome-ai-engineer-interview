@@ -87,4 +87,4 @@ The per-option "why" is the gold. A question without it will be sent back.
 
 Contributors are credited in release notes. Good PRs get referenced from the [Landed](https://landed.jobs) community.
 
-Don't just apply. Get **referred**, get **prepped**, get **Landed**.
+Stop spraying. Get **matched**, get **prepped**, get **Landed**.

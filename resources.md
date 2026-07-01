@@ -137,7 +137,7 @@ We link the good ones and tell you where they stop — this repo exists because 
 
 <div align="center">
 
-### Don't just apply. Get **referred**, get **prepped**, get **Landed**.
+### Stop spraying. Get **matched**, get **prepped**, get **Landed**.
 
 [![Get Started](https://img.shields.io/badge/Get%20Started%20Free-→-6C2BD9?style=for-the-badge)](https://landed.jobs)
 
