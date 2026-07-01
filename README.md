@@ -1,77 +1,235 @@
+<div align="center">
+
+<img src="https://static.b100x.ai/email/landed-wordmark.png" alt="Landed" width="300" />
+
 # Awesome AI Engineer Interview [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> The open prep guide for **AI Engineer interviews** — real questions, what's actually tested, and how to answer.
-> Maintained by [Landed](https://landed.b100x.ai) — scout roles, get **referred**, and run company-specific mock interviews.
+**The deepest, most current prep for the 2026 AI Engineer loop** — real questions, worked system designs, per-company loops, all sourced.
 
-⭐ **Star this** to prep smarter. PRs with new questions welcome.
+[![Stars](https://img.shields.io/github/stars/landedjobs/awesome-ai-engineer-interview?style=social)](https://github.com/landedjobs/awesome-ai-engineer-interview)
+[![License: MIT](https://img.shields.io/badge/License-MIT-6C2BD9.svg)](LICENSE)
+[![Updated](https://img.shields.io/badge/updated-2026--07-00A86B)](#whats-new-2026-07)
+[![Questions](https://img.shields.io/badge/questions-267-6C2BD9)](questions/)
+[![Companies](https://img.shields.io/badge/company%20loops-12-6C2BD9)](company/)
+[![Visit Landed](https://img.shields.io/badge/Visit-Landed-6C2BD9?logo=rocket&logoColor=white)](https://landed.jobs)
 
----
+*Maintained by [Landed](https://landed.jobs) — scout AI-native roles, get **referred**, prep with mock interviews, and land the job.*
 
-## What an AI Engineer interview actually tests
-
-Most AI Engineer loops (2026) test five things — usually **not** ML theory from scratch:
-
-1. **LLM application design** — RAG, agents, tool use, when to fine-tune vs prompt.
-2. **Practical coding** — Python, APIs, data wrangling; ship a small working thing.
-3. **Evals & reliability** — how you measure and improve an LLM system.
-4. **System design** — retrieval, caching, latency, cost, guardrails.
-5. **Product sense** — does your solution actually help the user.
+</div>
 
 ---
 
-## Core questions (with what they're looking for)
+The **AI Engineer** was a #1 fastest-growing US job title, and the loop that gates it has almost nothing to do with LeetCode. In 2026 it tests whether you can **ship reliable products on top of LLMs** — RAG, agents, evals, LLMOps, and AI system design — and reason about them like a senior. This repo is the complete, **sourced** map of that loop: what each round tests, the real questions people were asked, a reusable system-design rubric applied to 10 worked designs, and per-company breakdowns. No fluff, no memorization dumps — mechanism-first, dated 2026.
 
-### LLM & RAG
-- **Walk me through a RAG pipeline you'd build for X.** → chunking, embeddings, vector store, retrieval, re-ranking, grounding, citations.
-- **How do you reduce hallucinations?** → grounding in retrieved context, citations, constrained decoding, evals, human-in-loop.
-- **When would you fine-tune instead of prompt/RAG?** → stable task, style/format control, latency/cost at scale; RAG for fresh/factual.
-- **How do you chunk documents well?** → semantic vs fixed, overlap, metadata, eval on retrieval quality.
+> ⭐ **Star this repo** — it's the flagship interview guide in the [Landed AI-native jobs family](#part-of-the-landed-ai-native-jobs-family), refreshed as the loop evolves.
 
-### Agents
-- **Design an agent that does X.** → tools/function-calling, planning, memory, termination conditions, failure handling, cost control.
-- **How do you keep an agent from looping or going off-task?** → step limits, validation, guardrails, evals.
+## What an AI Engineer interview tests in 2026 — the 5 pillars
 
-### Evals
-- **How would you evaluate an LLM feature?** → offline eval sets, LLM-as-judge (with caveats), human review, regression tests, production monitoring.
-- **Your accuracy dropped after a model upgrade. What do you do?** → eval harness, diff outputs, prompt/version pinning, rollback.
+Answer-first: five things separate a pass from a reject. Everything in this repo hangs off these.
 
-### Coding / practical
-- Build a small endpoint that takes a query, retrieves context, and answers with citations.
-- Parse messy data into a clean structured output with an LLM + validation.
+1. **LLM fundamentals & mechanism** — the generation loop (prefill/decode), tokens, context windows (Lost-in-the-Middle, Context Rot), sampling, KV cache, and enough transformer internals to *implement attention from memory*. → [content/01](content/01-llm-fundamentals.md)
+2. **RAG done as an IR problem** — embeddings + ANN, recall@k/precision@k, chunking, hybrid + rerank, and how to debug retrieval *before* the model. → [content/02](content/02-rag.md)
+3. **Agents, tools & MCP** — agent-vs-workflow judgment, error compounding, tool/ACI design, MCP, and stateless-model/stateful-harness memory. → [content/03](content/03-agents-and-tool-use.md)
+4. **Evals & reliability** — "eval is the new system design": LLM-as-judge (calibrated), pass@k vs pass^k, trajectory vs outcome eval, and gating on a golden set. → [content/04](content/04-evals-and-llm-as-judge.md)
+5. **AI system design + LLMOps** — one rubric (framing → data/eval → retrieval/model → serving/latency → guardrails → monitoring/cost → scaling), plus cost/latency, fine-tuning, and security. → [content/07](content/07-ml-and-llm-system-design.md)
 
-### System design
-- **Design a production question-answering system over 10M documents.** → ingestion, embeddings, vector DB, retrieval, caching, latency/cost, monitoring, guardrails.
+> [!TIP]
+> The single biggest 2026 shift: interviewers stopped asking "can you call the API?" and started asking "**how do you know it works, and how does it fail?**" Evals, guardrails, and cost are now first-class rounds — not afterthoughts.
 
-### Behavioral
-- A time you shipped fast under ambiguity; a project you're proud of; how you handle being wrong.
+> ⭐ If this saved you an hour of prep, **star it** so the next person finds it.
+
+## The interview-loop map
+
+The signature table — what actually happens across an AI Engineer loop, and where to prep each round in this repo. (Loop synthesized from public 2026 processes across OpenAI, Anthropic, DeepMind, Meta, Scale, and applied-AI startups — see [company/](company/) for per-company detail.)
+
+| Round | What it tests | How to prep | Deep link |
+|---|---|---|---|
+| **Recruiter screen** | Motivation, role-fit, comp, visa | Know the company's philosophy (write-the-model / ship-the-platform / build-the-product) | [company/](company/) |
+| **Coding screen** | Python/PyTorch fluency; implement attention / a tokenizer / LoRA from memory | Practice the primitives, not LeetCode grind | [questions/coding](questions/coding.md) · [content/01](content/01-llm-fundamentals.md) |
+| **Take-home** | Ship a small RAG/agent app + a written **eval** section | Build the eval first; it's what they grade | [content/04](content/04-evals-and-llm-as-judge.md) · [answers/eval-pipeline](answers/eval-pipeline.md) |
+| **AI system design** (signature) | Design ChatGPT / a RAG system / LLM serving / an agent — with numbers | One rubric, applied cold | [answers/system-design-rubric](answers/system-design-rubric.md) |
+| **Coding II** | Applied AI-systems coding, streaming, rate-limiter, gRPC service | Real-world building, not puzzles | [questions/coding](questions/coding.md) |
+| **AI/ML specialized** | Fine-tuning, quantization, KV cache, RLHF/DPO/GRPO, evals | Depth on post-training + inference | [content/06](content/06-fine-tuning-and-inference.md) |
+| **Behavioral + alignment** | End-to-end project ownership; safety debate (esp. Anthropic) | STAR + a real AI project you can defend | [questions/behavioral](questions/behavioral.md) |
+| **Team match & offer** | Fit, leveling, comp | Referrals convert far better than cold apps | [Landed →](https://landed.jobs) |
+
+## The prep path
+
+```mermaid
+flowchart LR
+    F["🧠 LLM fundamentals"] --> R["🔎 RAG"]
+    R --> A["🤖 Agents + MCP"]
+    A --> E["✅ Evals"]
+    E --> SD["🏗️ System design"]
+    SD --> C["🏢 Company loops"]
+    C --> OFFER["🎯 Offer"]
+    F -.-> FT["🔧 Fine-tuning + inference"]
+    FT --> SD
+    E -.-> SEC["🛡️ Security + guardrails"]
+    SEC --> SD
+    style F fill:#6C2BD9,color:#fff
+    style E fill:#6C2BD9,color:#fff
+    style SD fill:#6C2BD9,color:#fff
+    style OFFER fill:#00A86B,color:#fff
+```
+
+## Contents
+
+- [📖 Content — one concept per file](#-content--one-concept-per-file) (9 deep explainers)
+- [❓ Question bank](#-question-bank) (230+ questions, tiered & sourced)
+- [🏗️ Worked system designs](#️-worked-system-designs) (1 rubric + 10 designs)
+- [🏢 Company loops](#-company-loops) (12 companies, sourced questions)
+- [📚 Resource hub](#-resource-hub) (typed, annotated, license-noted)
+- [🗓️ Study plan](#️-study-plan) (1-week + 1-month)
+- [🆕 What's new (2026-07)](#whats-new-2026-07)
+- [❔ FAQ](#faq)
+- [🤝 Contributing](#contributing)
 
 ---
 
-## How to prepare (2-week plan)
+## 📖 Content — one concept per file
 
-1. Build one **RAG app** and one **agent** end-to-end (see [projects-to-land-an-ai-job](https://github.com/landedjobs/projects-to-land-an-ai-job)).
-2. Write an **eval set** for each — be ready to talk about how you measure quality.
-3. Practice explaining trade-offs out loud (prompt vs RAG vs fine-tune).
-4. Run **company-specific mock interviews** on [Landed](https://landed.b100x.ai).
+Mechanism-first explainers with senior-trap `> [!WARNING]` callouts, aha-moment `> [!TIP]`s, interview-angle menus, and a capped, typed resource block each.
+
+| # | Topic | What it covers |
+|---|---|---|
+| 01 | [LLM fundamentals](content/01-llm-fundamentals.md) | Prefill/decode, tokens, context window, sampling, reasoning models, KV cache, attention & transformer internals |
+| 02 | [RAG](content/02-rag.md) | Embeddings + ANN, recall@k/precision@k, chunking, hybrid + RRF, reranking, scale math, eval, ACL |
+| 03 | [Agents & tool use](content/03-agents-and-tool-use.md) | Agent vs workflow, ReAct, tool/ACI design, error compounding, MCP, memory & state |
+| 04 | [Evals & LLM-as-judge](content/04-evals-and-llm-as-judge.md) | Rings of testing, judge calibration, pass@k vs pass^k, trajectory vs outcome, error analysis |
+| 05 | [LLMOps — cost & latency](content/05-llmops-cost-latency.md) | Prompt/semantic caching, tiered routing, reliable client, hedging, fallback, silent regressions |
+| 06 | [Fine-tuning & inference](content/06-fine-tuning-and-inference.md) | RAG-vs-FT-vs-prompt, LoRA/QLoRA, RLHF/DPO/GRPO, quantization, PagedAttention, speculative decoding |
+| 07 | [ML & LLM system design](content/07-ml-and-llm-system-design.md) | The reusable rubric, whiteboard estimation, latency budgets, tradeoff reasoning |
+| 08 | [Prompting & structured output](content/08-prompt-engineering-and-structured-output.md) | Static contract vs context, CoT/self-consistency, constrained decoding, schema-as-accuracy |
+| 09 | [Security & guardrails](content/09-security-and-guardrails.md) | Prompt injection, the lethal trifecta, EchoLeak, CaMeL/dual-LLM, OWASP LLM Top 10 |
+
+## ❓ Question bank
+
+**230+ questions**, topic-grouped and difficulty-tiered. Multiple-choice entries keep the **per-option "why"** — right *and* wrong — behind a `<details>` block so you can self-test first. Every "real" question is provenance-labeled: ✅ **Reported** (with source) vs 🔮 **Representative**.
+
+→ **[Browse the full bank](questions/README.md)**
+
+| Topic | File | | Topic | File |
+|---|---|---|---|---|
+| Fundamentals & transformers | [questions/fundamentals](questions/fundamentals.md) | | Fine-tuning & inference | [questions/fine-tuning](questions/fine-tuning.md) |
+| RAG | [questions/rag](questions/rag.md) | | System design | [questions/system-design](questions/system-design.md) |
+| Agents & MCP | [questions/agents](questions/agents.md) | | Coding rounds | [questions/coding](questions/coding.md) |
+| Evals | [questions/evals](questions/evals.md) | | Behavioral & alignment | [questions/behavioral](questions/behavioral.md) |
+| LLMOps | [questions/llmops](questions/llmops.md) | | | |
+
+## 🏗️ Worked system designs
+
+The design round is where most candidates hand-wave. We give you **one reusable rubric** — framing → data/eval → retrieval/model → serving/latency → guardrails → monitoring/cost → scaling — then apply it to **10 original, numeric worked designs** (RAM math, p50/p99 budgets, QPS, cost/month, index choice).
+
+→ **[The rubric](answers/system-design-rubric.md)** · then the designs:
+
+- [RAG over 10M docs](answers/rag-over-10m-docs.md) · [Semantic search](answers/semantic-search.md) · [Support bot](answers/support-bot.md)
+- [Agentic workflow](answers/agentic-workflow.md) · [Coding agent](answers/coding-agent.md) · [Eval pipeline](answers/eval-pipeline.md)
+- [Content moderation](answers/content-moderation.md) · [LLM inference at scale](answers/llm-inference-at-scale.md)
+- [AI candidate sourcing (750M profiles, <500ms)](answers/ai-candidate-sourcing.md) · [Hallucination-free banking chatbot](answers/hallucination-free-banking-chatbot.md)
+
+## 🏢 Company loops
+
+Per-company loops with **verbatim, sourced** questions — the three hiring philosophies, signature rounds, and how to prep each. → **[All companies](company/README.md)**
+
+[OpenAI](company/openai.md) · [Anthropic](company/anthropic.md) · [Google DeepMind](company/google-deepmind.md) · [Meta](company/meta.md) · [Scale](company/scale.md) · [xAI](company/xai.md) · [Databricks](company/databricks.md) · [Perplexity](company/perplexity.md) · [Cohere](company/cohere.md) · [Mistral](company/mistral.md) · [Cursor](company/cursor.md) · [Nvidia](company/nvidia.md)
+
+## 📚 Resource hub
+
+Every link typed (📄 📘 📰 🎬 🧑‍🏫 🛠️ 💻), annotated, and license-noted; capped ~8 per topic. → **[resources.md](resources.md)**
 
 ---
 
-## Company-specific guides
+## 🗓️ Study plan
 
-Landed maintains interview guides + real candidate experiences per company and role. **[Find your company's AI Engineer guide →](https://landed.b100x.ai)**
+### 1 week (you have an onsite booked)
+
+| Day | Focus | Do |
+|---|---|---|
+| 1 | Fundamentals | [content/01](content/01-llm-fundamentals.md) + [fundamentals Qs](questions/fundamentals.md); implement attention from memory |
+| 2 | RAG | [content/02](content/02-rag.md) + [rag Qs](questions/rag.md); memorize the RAM math + 7 failure points |
+| 3 | Agents + evals | [content/03](content/03-agents-and-tool-use.md) + [content/04](content/04-evals-and-llm-as-judge.md); pass@k vs pass^k, MCP security |
+| 4 | System design | [rubric](answers/system-design-rubric.md) + 3 worked designs out loud |
+| 5 | LLMOps + fine-tuning | [content/05](content/05-llmops-cost-latency.md) + [content/06](content/06-fine-tuning-and-inference.md); cost estimation, LoRA/DPO/GRPO |
+| 6 | Company + security | Your target's [company page](company/README.md) + [content/09](content/09-security-and-guardrails.md) |
+| 7 | Mock | Timed design + behavioral; [book a mock →](https://landed.jobs) |
+
+### 1 month (building toward the loop)
+
+- **Week 1** — Fundamentals + prompting/structured output ([01](content/01-llm-fundamentals.md), [08](content/08-prompt-engineering-and-structured-output.md)). Build a tiny RAG pipeline.
+- **Week 2** — RAG + evals ([02](content/02-rag.md), [04](content/04-evals-and-llm-as-judge.md)). Add a golden-set eval harness to your RAG.
+- **Week 3** — Agents + LLMOps + fine-tuning ([03](content/03-agents-and-tool-use.md), [05](content/05-llmops-cost-latency.md), [06](content/06-fine-tuning-and-inference.md)). Build an agent loop with traces.
+- **Week 4** — System design ([all 10 worked designs](answers/)) + [company loops](company/) + security ([09](content/09-security-and-guardrails.md)). Full mock loop.
 
 ---
 
-## Resources
+## What's new (2026-07)
 
-- LLM app patterns, eval frameworks, vector DB docs (community-maintained — PRs welcome).
+Most recent first. The 2026 AI Engineer loop looks materially different from 2024.
+
+- **🆕 "Eval is the new system design."** Take-homes and onsites now grade your **eval harness** as heavily as your app. We added [content/04](content/04-evals-and-llm-as-judge.md) + [answers/eval-pipeline](answers/eval-pipeline.md) covering pass@k vs pass^k, trajectory vs outcome, judge calibration (Cohen's κ), and CI gating.
+- **🆕 MCP fluency is a resume must-have.** Registries list thousands of servers. New coverage of the handshake, rug-pull / tool-poisoning defenses, and the gateway pattern in [content/03](content/03-agents-and-tool-use.md).
+- **🆕 Reasoning models reshaped the loop.** o-series/R1-style thinking tokens change trajectories and cost → 2-tier routing per node; when to use a reasoning model vs standard. In [content/01](content/01-llm-fundamentals.md) + [content/05](content/05-llmops-cost-latency.md).
+- **🆕 Context engineering** — Anthropic's principles: just-write-context, long-context-doesn't-fix-bad-context, curate-context. Sub-agent architectures and tool-result compression in [content/03](content/03-agents-and-tool-use.md) + [content/08](content/08-prompt-engineering-and-structured-output.md).
+- **🆕 Agentic eval as a 3-metric stack** — outcome (task success) · trajectory (steps/tokens, tool-call accuracy) · tool/reasoning (schema compliance). See [content/04](content/04-evals-and-llm-as-judge.md).
+- **🆕 Prompt injection is CVE-trackable** — EchoLeak (CVE-2025-32711, CVSS 9.3), the lethal trifecta, CaMeL/dual-LLM defenses. New [content/09](content/09-security-and-guardrails.md).
+- **🆕 Post-training moved to GRPO** (DeepSeek-R1) and **FP8** is the default inference precision. Updated [content/06](content/06-fine-tuning-and-inference.md).
+
+---
 
 ## FAQ
 
-**Do I need to grind LeetCode?** Some companies still include a coding round, but AI Engineer loops lean toward practical LLM building + system design. Balance both.
+**Do I need an ML PhD to pass an AI Engineer interview?**
+No. Applied-AI and product-AI roles want people who **ship** with LLMs — RAG, agents, evals, cost/latency — not researchers. Frontier labs (OpenAI/Anthropic/DeepMind) weight research more and may ask you to implement attention/PPO from memory, but even there, demonstrated shipping ability carries a real loop. Focus on mechanism + a project you can defend end-to-end.
 
-**No production LLM experience — can I still pass?** Yes, if you've **built and can explain** real projects. Demonstrated work + clear reasoning about trade-offs is what interviewers want.
+**Should I grind LeetCode?**
+Mostly no. Coding rounds lean **applied** — implement a tokenizer, attention, a LoRA adapter, a rate-limiter, or a small streaming service. A little algorithmic warm-up (LRU cache, tries, sliding-window) helps for the phone screen, but the differentiator is AI-systems fluency, not puzzle speed. See [questions/coding](questions/coding.md).
+
+**AI Engineer vs ML Engineer interview — what's the difference?**
+ML Engineer loops skew classic ML (bias/variance, regularization, feature stores, A/B tests, recommender design). AI Engineer loops skew **LLM apps** (RAG, agents, evals, prompting, LLMOps, LLM system design). Some infra-heavy roles ("ship the platform") blend in serving/quantization; research roles ("write the model") add post-training and paper analysis. This repo targets the AI-Engineer/applied-AI center of gravity.
+
+**I have no production LLM experience — can I still pass?**
+Yes, if you close the gap deliberately. Build 2–3 real things — a RAG pipeline with a **golden-set eval**, an agent loop with **traces**, and one thing that fails and shows you handled it (a guardrail, a fallback, a cost cut). The loop rewards candidates who can talk about **how it fails and how you'd know**, which you can earn from a weekend project + this repo.
+
+**How long does it take to prepare?**
+With a solid Python/ML base: **1 focused week** to cram the loop (see the [1-week plan](#1-week-you-have-an-onsite-booked)). Starting closer to zero on LLM apps: **~1 month** building + studying (see the [1-month plan](#1-month-building-toward-the-loop)).
+
+**What's new for 2026?**
+Evals as a first-class round, MCP, reasoning-model routing, context engineering, agentic eval, and CVE-grade prompt-injection defense. See [What's new](#whats-new-2026-07).
+
+**Is this better than the existing AI-interview repos?**
+It's the only one we know of that combines **per-lab loops + typed/annotated resources + sourced verbatim questions + a reusable design rubric with 10 worked answers + 2026 topics** in one place. We link the others honestly in [resources.md](resources.md#question-banks--competitor-repos) and tell you where they stop.
 
 ---
 
-<sub>Maintained by [Landed](https://landed.b100x.ai). Prep with company-specific guides + mock interviews.</sub>
+## Contributing
+
+PRs and issues welcome — add questions, resources, worked answers, or company-loop updates. This is a **curated, sourced** repo: every real question is provenance-labeled and every link is typed + annotated. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the quality spec and license discipline.
+
+---
+
+### Part of the Landed AI-native jobs family
+
+The umbrella maps every AI-native role; the siblings go deep per role.
+
+- 🧭 [Awesome AI-Native Jobs](https://github.com/landedjobs/awesome-ai-native-jobs) — the umbrella (roles, salaries, skills, prep)
+- 🔎 [RAG Engineer Interview Questions](https://github.com/landedjobs/rag-engineer-interview-questions) — the retrieval-specialist loop
+- 📦 [AI PM Interview Prep](https://github.com/landedjobs/ai-pm-interview-prep) — for AI product roles
+- 🧪 [Projects to Land an AI Job](https://github.com/landedjobs/projects-to-land-an-ai-job) — build the portfolio that gets you the loop
+- 🤖 [2026 AI Engineer Jobs](https://github.com/landedjobs/ai-engineer-jobs) — the live job list
+
+---
+
+<div align="center">
+
+### Don't just apply. Get **referred**, get **prepped**, get **Landed**.
+
+[![Get Started](https://img.shields.io/badge/Get%20Started%20Free-→-6C2BD9?style=for-the-badge)](https://landed.jobs)
+
+<sub>Maintained by [Landed](https://landed.jobs) · No affiliation with the companies named. Content MIT-licensed; linked resources retain their own licenses. Questions are provenance-labeled — reported questions cite public sources.</sub>
+
+<br/>
+
+[![Star History Chart](https://api.star-history.com/svg?repos=landedjobs/awesome-ai-engineer-interview&type=Date)](https://star-history.com/#landedjobs/awesome-ai-engineer-interview&Date)
+
+</div>
