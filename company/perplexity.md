@@ -47,7 +47,7 @@ Source: candidate reports [15], [16], [17], [18]; timeline [19].
 
 - **In-memory file system** → [questions/](../questions/) coding tier; practice a clean OOP tree with create/read/move/list.
 - **Vector RAG search** → [answers/semantic-search.md](../answers/semantic-search.md) is the canonical worked design (embeddings, ANN, reranking, citations) plus [content/02](../content/02-rag.md).
-- **Answer-quality eval** → [answers/eval-pipeline.md](../answers/eval-pipeline.md) and [content/04](../content/04-evals.md).
+- **Answer-quality eval** → [answers/eval-pipeline.md](../answers/eval-pipeline.md) and [content/04](../content/04-evals-and-llm-as-judge.md).
 - **Founder round** → prepare a concrete product opinion about Perplexity you can defend.
 
 ## Culture signals

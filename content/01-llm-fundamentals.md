@@ -382,4 +382,4 @@ A menu of the questions you'll actually get. Lead with the mechanism, then the p
 
 ---
 
-Back to [README](../README.md) · [All questions](../questions/README.md) · [LLM fundamentals questions](../questions/llm-fundamentals.md)
+Back to [README](../README.md) · [All questions](../questions/README.md) · [LLM fundamentals questions](../questions/fundamentals.md)

@@ -318,4 +318,4 @@ With strict/constrained decoding the malformed-JSON class is gone, so a retry sh
 
 ---
 
-Back to [README](../README.md) · [All questions](../questions/README.md) · [Prompting questions](../questions/prompting.md)
+Back to [README](../README.md) · [All questions](../questions/README.md) · [Prompting questions](../questions/README.md)

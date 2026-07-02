@@ -47,8 +47,8 @@ Source: candidate reports [105], [103], [4]; decentralized process [4].
 
 ## How to prep
 
-- **Transformer block from scratch** → [content/01](../content/01-transformers-and-attention.md).
-- **Calibrated / multimodal evaluation** → [answers/eval-pipeline.md](../answers/eval-pipeline.md) and [content/04](../content/04-evals.md).
+- **Transformer block from scratch** → [content/01](../content/01-llm-fundamentals.md).
+- **Calibrated / multimodal evaluation** → [answers/eval-pipeline.md](../answers/eval-pipeline.md) and [content/04](../content/04-evals-and-llm-as-judge.md).
 - **Vector DB at scale** → [answers/semantic-search.md](../answers/semantic-search.md) (ANN/HNSW, sharding, recall vs latency).
 - **Research presentation** → prepare a 10-minute past-work talk *and* a critique of one recent DeepMind paper, with the falsifying experiment ready.
 - **Code review** → practice ranking bugs by blast radius; see [questions/](../questions/).

@@ -53,8 +53,8 @@ Source: candidate reports [10], [95]; timeline [14].
 
 ## How to prep
 
-- **Attention / transformer from memory** → work through [content/01](../content/01-transformers-and-attention.md); rehearse writing multi-head attention with a KV-cache cold.
-- **RLHF / PPO / VAE** → [content/03](../content/03-training-and-alignment.md) for the RLHF pipeline mental model at 70B scale.
+- **Attention / transformer from memory** → work through [content/01](../content/01-llm-fundamentals.md); rehearse writing multi-head attention with a KV-cache cold.
+- **RLHF / PPO / VAE** → [content/03](../content/06-fine-tuning-and-inference.md) for the RLHF pipeline mental model at 70B scale.
 - **"Design ChatGPT" / serving stack** → the worked design in [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md) (batching, KV-cache, quantization, autoscaling) and [answers/support-bot.md](../answers/support-bot.md) for the product-shaped variant.
 - **Evaluation pipeline** → [answers/eval-pipeline.md](../answers/eval-pipeline.md); be ready to design the eval *before* the system.
 - **RAG fundamentals** → [content/02](../content/02-rag.md).

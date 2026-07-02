@@ -52,8 +52,8 @@ Source: candidate reports [79], [8]; CodeSignal screen [62]; take-home [61], [63
 
 ## How to prep
 
-- **Mechanistic interpretability** → [content/03](../content/03-training-and-alignment.md) and the interp section of [content/01](../content/01-transformers-and-attention.md); actually run an attention-head ablation before the take-home.
-- **PPO / RLHF safety constraints** → [content/03](../content/03-training-and-alignment.md).
+- **Mechanistic interpretability** → [content/03](../content/06-fine-tuning-and-inference.md) and the interp section of [content/01](../content/01-llm-fundamentals.md); actually run an attention-head ablation before the take-home.
+- **PPO / RLHF safety constraints** → [content/03](../content/06-fine-tuning-and-inference.md).
 - **"Design an LLM chat system with retrieval + tool-use"** → [answers/agentic-workflow.md](../answers/agentic-workflow.md) and [answers/support-bot.md](../answers/support-bot.md).
 - **Coding warm-ups** (trie, matrix rotate, merge, rate limiter) → [questions/](../questions/) coding tier; time yourself at CodeSignal pace.
 - **RAG** → [content/02](../content/02-rag.md).

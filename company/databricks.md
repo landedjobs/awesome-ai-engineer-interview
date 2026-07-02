@@ -45,7 +45,7 @@ Source: candidate reports [37], [38], [39].
 
 ## How to prep
 
-- **Feature store / online inference** → [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md) and [content/06](../content/06-data-and-eval-sets.md) for train/serve consistency.
+- **Feature store / online inference** → [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md) and [content/06](../content/04-evals-and-llm-as-judge.md) for train/serve consistency.
 - **Spark scaling** → know shuffle, partitioning, broadcast joins, and where clusters bottleneck.
 - **ML system design** → [answers/eval-pipeline.md](../answers/eval-pipeline.md) and [answers/semantic-search.md](../answers/semantic-search.md).
 - **Coding warm-ups** → [questions/](../questions/) coding tier.

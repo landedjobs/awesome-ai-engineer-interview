@@ -48,7 +48,7 @@ Source: candidate reports [51], [52], [53], [118]; timeline [116]; FDE [50].
 ## How to prep
 
 - **ML eval pipeline take-home** → [answers/eval-pipeline.md](../answers/eval-pipeline.md) is the canonical worked design; build a runnable version before the loop.
-- **Data wrangling / stats** → [content/06](../content/06-data-and-eval-sets.md); practice parsing messy CSVs into clean, defensible statistics.
+- **Data wrangling / stats** → [content/06](../content/04-evals-and-llm-as-judge.md); practice parsing messy CSVs into clean, defensible statistics.
 - **Reading unfamiliar code** → [questions/](../questions/) coding tier; time yourself finding conceptual bugs.
 - **FDE presentation** → rehearse a 10-minute "here's the dataset, here's what I found, here's what I'd caveat" talk.
 - **System design + data modeling** → [answers/semantic-search.md](../answers/semantic-search.md).

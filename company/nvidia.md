@@ -44,8 +44,8 @@ Source: candidate reports [114], [115].
 
 ## How to prep
 
-- **Roofline / compute-vs-memory** → [content/07](../content/07-inference-and-hardware.md); learn to classify a kernel by its bottleneck.
-- **Distributed-training memory** → [content/03](../content/03-training-and-alignment.md) and [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md) (parallelism, checkpointing, ZeRO).
+- **Roofline / compute-vs-memory** → [content/07](../content/06-fine-tuning-and-inference.md); learn to classify a kernel by its bottleneck.
+- **Distributed-training memory** → [content/03](../content/06-fine-tuning-and-inference.md) and [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md) (parallelism, checkpointing, ZeRO).
 - **CUDA kernels** → practice a tiled matmul kernel from scratch; understand shared memory, occupancy, and coalescing.
 - **System design** → [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md).
 

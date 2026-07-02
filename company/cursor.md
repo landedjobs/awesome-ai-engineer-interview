@@ -44,7 +44,7 @@ Source: candidate reports [40], [41], [42], [43], [44]; "no AI in interviews" [4
 ## How to prep
 
 - **Rate limiter / clean interfaces** → [questions/](../questions/) coding tier; practice a token-bucket limiter with per-user rules and a clean interface.
-- **AI code completion / applied systems** → [answers/agentic-workflow.md](../answers/agentic-workflow.md) and [content/05](../content/05-ai-assisted-engineering.md).
+- **AI code completion / applied systems** → [answers/agentic-workflow.md](../answers/agentic-workflow.md) and [content/05](../questions/coding.md).
 - **Latency-sensitive serving** → [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md).
 - **No-AI muscle** → practice implementing from scratch, no autocomplete — the opposite of your day job.
 

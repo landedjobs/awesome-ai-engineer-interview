@@ -44,7 +44,7 @@ Source: candidate reports [70], [72], [73]; onsite structure "Cohere ML IGAO."
 
 ## How to prep
 
-- **Language modelling** → [content/01](../content/01-transformers-and-attention.md) and [content/03](../content/03-training-and-alignment.md); be ready to derive next-token loss and reason about tokenization.
+- **Language modelling** → [content/01](../content/01-llm-fundamentals.md) and [content/03](../content/06-fine-tuning-and-inference.md); be ready to derive next-token loss and reason about tokenization.
 - **Enterprise RAG system design** → [answers/semantic-search.md](../answers/semantic-search.md) and [content/02](../content/02-rag.md).
 - **3-hour assessment stamina** → do a full-length timed mock; [questions/](../questions/) for the coding tier.
 - **Deep dive** → prepare one project you can defend to arbitrary depth.

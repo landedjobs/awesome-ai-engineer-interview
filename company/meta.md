@@ -48,9 +48,9 @@ Source: candidate reports [55], [56], [57].
 ## How to prep
 
 - **Coding volume** → [questions/](../questions/) coding tier; drill LeetCode-medium at phone-screen pace.
-- **"Coding with AI"** → practice reviewing AI-generated diffs: what to trust, what to test. See [content/05](../content/05-ai-assisted-engineering.md) and [answers/agentic-workflow.md](../answers/agentic-workflow.md).
+- **"Coding with AI"** → practice reviewing AI-generated diffs: what to trust, what to test. See [content/05](../questions/coding.md) and [answers/agentic-workflow.md](../answers/agentic-workflow.md).
 - **Recommender / feed system design** → [answers/semantic-search.md](../answers/semantic-search.md) for retrieval-and-ranking patterns; [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md) for latency/caching.
-- **ML theory** → [content/00](../content/00-ml-fundamentals.md) (L1/L2, bias/variance, precision-recall).
+- **ML theory** → [content/00](../content/01-llm-fundamentals.md) (L1/L2, bias/variance, precision-recall).
 - **Research deep-dive** → prepare a crisp past-work presentation.
 
 ## Culture signals

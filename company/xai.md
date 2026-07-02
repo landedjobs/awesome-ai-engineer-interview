@@ -46,7 +46,7 @@ Source: candidate reports [31], [32], [33], [34], [30], [96], [97].
 
 - **Distributed serving / matmul** → [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md) (tensor/pipeline parallelism, batching, KV-cache).
 - **CodeSignal speed** → [questions/](../questions/) coding tier; drill graph + two medium-hard problems under a 70-min cap.
-- **Interpretability** → [content/03](../content/03-training-and-alignment.md) for SHAP/LIME trade-offs.
+- **Interpretability** → [content/03](../content/06-fine-tuning-and-inference.md) for SHAP/LIME trade-offs.
 - **"Why xAI"** → prepare a 60-second mission answer you actually believe.
 
 ## Culture signals

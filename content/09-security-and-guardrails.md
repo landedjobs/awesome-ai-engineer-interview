@@ -282,4 +282,4 @@ Use it as a checklist, not a lecture. Lead with **LLM01 prompt injection** (stru
 
 ---
 
-Back to [README](../README.md) · [All questions](../questions/README.md) · [Security questions](../questions/security.md)
+Back to [README](../README.md) · [All questions](../questions/README.md) · [Security questions](../questions/README.md)
