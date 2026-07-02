@@ -1,17 +1,10 @@
 name: Link check
 
 on:
-  push:
-    branches: [main]
-  pull_request:
   schedule:
-    # Weekly, Monday 06:00 UTC — catches links that rot after merge.
+    # Re-check links weekly — the ecosystem moves fast and links rot.
     - cron: "0 6 * * 1"
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  issues: write
+  workflow_dispatch: {}
 
 jobs:
   lychee:
@@ -20,22 +13,20 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run lychee link checker
-        id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
             --verbose
             --no-progress
             --max-concurrency 8
-            --accept 200,206,429
-            --exclude-mail
+            --accept 200,201,204,206,301,302,308,429
+            --exclude 'glassdoor\.com'
+            --exclude 'teamblind\.com'
+            --exclude 'levels\.fyi'
+            --exclude 'reddit\.com'
+            --exclude '(twitter|x)\.com'
+            --exclude 'linkedin\.com'
             './**/*.md'
-          fail: false
-
-      - name: Create issue on broken links
-        if: steps.lychee.outputs.exit_code != 0
-        uses: peter-evans/create-issue-from-file@v5
-        with:
-          title: "Broken links detected by lychee"
-          content-filepath: ./lychee/out.md
-          labels: broken-links, automated
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
