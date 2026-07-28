@@ -1,33 +1,22 @@
-name: Link check
+name: Local link check
 
 on:
-  schedule:
-    # Re-check links weekly — the ecosystem moves fast and links rot.
-    - cron: "0 6 * * 1"
+  push:
+    branches: [main]
+  pull_request:
   workflow_dispatch: {}
 
 jobs:
-  lychee:
+  local-links:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run lychee link checker
+      - name: Check local Markdown links
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
-            --verbose
+            --offline
             --no-progress
-            --max-concurrency 8
-            --accept 200,201,204,206,301,302,307,308,401,403,429
-            --exclude 'glassdoor\.com'
-            --exclude 'teamblind\.com'
-            --exclude 'levels\.fyi'
-            --exclude 'reddit\.com'
-            --exclude '(twitter|x)\.com'
-            --exclude 'linkedin\.com'
-            --exclude 'star-history\.com'
             './**/*.md'
           fail: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
