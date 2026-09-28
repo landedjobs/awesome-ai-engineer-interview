@@ -83,6 +83,7 @@ flowchart LR
 - [🏢 Company loops](#-company-loops) (12 companies, sourced questions)
 - [📚 Resource hub](#-resource-hub) (typed, annotated, license-noted)
 - [🗓️ Study plan](#️-study-plan) (1-week + 1-month)
+- [🎓 Go deeper on landed.jobs](#-go-deeper-on-landedjobs) (13 courses, 60 system designs, roadmaps, salaries)
 - [🆕 What's new (2026-07)](#whats-new-2026-07)
 - [❔ FAQ](#faq)
 - [🤝 Contributing](#contributing)
@@ -162,6 +163,36 @@ Every link typed (📄 📘 📰 🎬 🧑‍🏫 🛠️ 💻), annotated, and 
 - **Week 2**: RAG + evals ([02](content/02-rag.md), [04](content/04-evals-and-llm-as-judge.md)). Add a golden-set eval harness to your RAG.
 - **Week 3**: Agents + LLMOps + fine-tuning ([03](content/03-agents-and-tool-use.md), [05](content/05-llmops-cost-latency.md), [06](content/06-fine-tuning-and-inference.md)). Build an agent loop with traces.
 - **Week 4**: System design ([all 10 worked designs](answers/)) + [company loops](company/) + security ([09](content/09-security-and-guardrails.md)). Full mock loop.
+
+---
+
+## 🎓 Go deeper on landed.jobs
+
+Free courses, more system designs and company guides on [landed.jobs](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=repo-home). Everything in this repo stays here; these pick up where it stops.
+
+**Courses, mapped to the 5 pillars**
+
+| Pillar | Course | Lessons |
+|---|---|--:|
+| 1. LLM fundamentals | [Ship Your First LLM Feature](https://www.landed.jobs/resources/courses/llm-features?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-llm-features) | 6 |
+| 1. LLM fundamentals | [Transformers & LLM Internals](https://www.landed.jobs/resources/courses/transformers-internals?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-transformers-internals) | 7 |
+| 2. RAG | [Retrieval-Augmented Generation](https://www.landed.jobs/resources/courses/rag-systems?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-rag-systems) | 7 |
+| 3. Agents & tools | [Reliable tool contracts for agents](https://www.landed.jobs/resources/courses/agent-tool-contracts?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-agent-tool-contracts) | 4 |
+| 3. Agents & tools | [Stateful agent workflows that survive interruption](https://www.landed.jobs/resources/courses/agent-stateful-workflows?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-agent-stateful-workflows) | 4 |
+| 3. Agents & tools | [Agent failure investigation and interview lab](https://www.landed.jobs/resources/courses/agent-failure-lab?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-agent-failure-lab) | 4 |
+| 4. Evals & reliability | [Agents, Evals & LLMOps](https://www.landed.jobs/resources/courses/agents-evals-llmops?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-agents-evals-llmops) | 7 |
+| 5. System design & LLMOps | [ML & LLM System Design Interview](https://www.landed.jobs/resources/courses/ml-system-design?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-ml-system-design) | 6 |
+| 5. System design & LLMOps | [Fine-Tuning & Inference Optimization](https://www.landed.jobs/resources/courses/fine-tuning-inference?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-fine-tuning-inference) | 6 |
+| 5. System design & LLMOps | [GPU capacity and inference mechanics](https://www.landed.jobs/resources/courses/ai-infra-capacity?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-ai-infra-capacity) | 4 |
+| 5. System design & LLMOps | [Reliable multi-tenant model serving](https://www.landed.jobs/resources/courses/ai-infra-serving?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-ai-infra-serving) | 4 |
+| Coding & behavioral rounds | [Coding Interviews for Applied Engineers](https://www.landed.jobs/resources/courses/coding-interviews-applied?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-coding-interviews-applied) | 8 |
+| Coding & behavioral rounds | [Behavioral & Storytelling for Technical Interviews](https://www.landed.jobs/resources/courses/behavioral-tech-interviews?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=course-behavioral-tech-interviews) | 8 |
+
+**60 more system designs.** The ones closest to AI Engineer loops: [ChatGPT](https://www.landed.jobs/resources/system-design/design-chatgpt?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-design-chatgpt) · [Recommendation Algorithm](https://www.landed.jobs/resources/system-design/recommendation-algorithm?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-recommendation-algorithm) · [Search Engine](https://www.landed.jobs/resources/system-design/search-engine?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-search-engine) · [Search Autocomplete](https://www.landed.jobs/resources/system-design/006-typeahead-suggestions?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-006-typeahead-suggestions) · [Real-time Fraud Detection](https://www.landed.jobs/resources/system-design/fraud-detection?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-fraud-detection) · [Rate Limiter](https://www.landed.jobs/resources/system-design/007-rate-limiter?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-007-rate-limiter) · [Distributed Cache](https://www.landed.jobs/resources/system-design/distributed-cache?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-distributed-cache) · [Metrics & Monitoring](https://www.landed.jobs/resources/system-design/metrics-monitoring?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-metrics-monitoring) · [Notification System](https://www.landed.jobs/resources/system-design/notification-system?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-notification-system) · [Top-K Leaderboard](https://www.landed.jobs/resources/system-design/leaderboard?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-leaderboard). [All 60 problems](https://www.landed.jobs/resources/system-design?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=system-design-index).
+
+**Roadmaps and pay.** [AI Engineer roadmap](https://www.landed.jobs/resources/roadmaps/ai-engineer?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=roadmap-ai-engineer) · [LLM Engineer roadmap](https://www.landed.jobs/resources/roadmaps/llm-engineer?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=roadmap-llm-engineer) · [Applied AI Engineer roadmap](https://www.landed.jobs/resources/roadmaps/applied-ai-engineer?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=roadmap-applied-ai-engineer) · [AI Engineer salaries](https://www.landed.jobs/salaries/ai-engineer?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=salaries-ai-engineer) · [LLM Engineer salaries](https://www.landed.jobs/salaries/llm-engineer?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=salaries-llm-engineer)
+
+**Company guides and questions.** Interview guides for [200 companies](https://github.com/landedjobs/ai-interview-guides) ([on landed.jobs](https://www.landed.jobs/resources/guides?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=guides-index)), and [759 AI interview questions by role](https://github.com/landedjobs/ai-interview-questions), each with a full answer.
 
 ---
 
