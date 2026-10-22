@@ -13,7 +13,7 @@
 [![Companies](https://img.shields.io/badge/company%20loops-12-6C2BD9)](company/)
 [![Visit Landed](https://img.shields.io/badge/Visit-Landed-6C2BD9?logo=rocket&logoColor=white)](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=repo-home)
 
-**The deepest, most current prep for the 2026 AI Engineer loop**: real questions, worked system designs, per-company loops, all sourced.
+**AI Engineer interview prep for 2026**: 267 questions, 10 worked system designs and the loops at 12 companies, each sourced.
 
 *Maintained by [Landed](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=repo-home): daily AI-native job matches, agent help with every application, and mock-interview prep.*
 
