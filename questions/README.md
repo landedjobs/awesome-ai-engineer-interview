@@ -18,7 +18,7 @@
 
 ---
 
-**This is the most complete AI-engineer interview question bank on the internet, and it is built to be *studied*, not skimmed.** Every one of the **196 checkpoint questions** is multiple choice with a hidden answer key that explains *why each option is right or wrong* — so you can self-test first and learn from the distractors, which encode the exact misconceptions interviewers listen for. On top of those, **71 real reported questions** carry a source link, and the system-design file lists the **10 concrete whiteboard prompts** you'll actually get. Dated for **2026**: reasoning models, MCP, agentic eval, context engineering, the lethal trifecta, GRPO/DPO, FP8, and "eval is the new system design."
+**This question bank is built to be *studied*, not skimmed.** Every one of the **196 checkpoint questions** is multiple choice with a hidden answer key that explains *why each option is right or wrong* — so you can self-test first and learn from the distractors, which encode the exact misconceptions interviewers listen for. On top of those, **71 real reported questions** carry a source link, and the system-design file lists the **10 concrete whiteboard prompts** you'll actually get. Dated for **2026**: reasoning models, MCP, agentic eval, context engineering, the lethal trifecta, GRPO/DPO, FP8, and "eval is the new system design."
 
 > ⭐ **Star this repo** if it helps — it's the fastest way to keep the 2026 updates coming.
 
