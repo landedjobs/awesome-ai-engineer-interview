@@ -19,6 +19,13 @@
 
 </div>
 
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
+
 ---
 
 The **AI Engineer** was a #1 fastest-growing US job title, and the loop that gates it has almost nothing to do with LeetCode. In 2026 it tests whether you can **ship reliable products on top of LLMs**: RAG, agents, evals, LLMOps, and AI system design, and reason about them like a senior. This repo is the complete, **sourced** map of that loop: what each round tests, the real questions people were asked, a reusable system-design rubric applied to 10 worked designs, and per-company breakdowns. No fluff, no memorization dumps, mechanism-first, dated 2026.
