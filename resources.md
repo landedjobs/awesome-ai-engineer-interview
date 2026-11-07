@@ -132,6 +132,7 @@ We link the good ones and tell you where they stop — this repo exists because 
 - 💻 [KalyanKS-NLP/LLM-Interview-Questions-and-Answers-Hub](https://github.com/KalyanKS-NLP/LLM-Interview-Questions-and-Answers-Hub) — Apache-2.0 · ~1k★. 100+ well-cited LLM Q&A; no 2026 loop guidance.
 - 💻 [KalyanKS-NLP/RAG-Interview-Questions-and-Answers-Hub](https://github.com/KalyanKS-NLP/RAG-Interview-Questions-and-Answers-Hub) — Apache-2.0. 100+ RAG Q&A; single-topic depth.
 - 💻 [alexeygrigorev/ai-engineering-field-guide](https://github.com/alexeygrigorev/ai-engineering-field-guide) — ~4k★. Closest scope; real Q4'25/Q1'26 practices, but thin Q&A and no MCP/context-eng.
+- 💻 [DataDank AI engineering interview questions](https://datadank.com/career/ai-engineer-interview-questions/) — free web Q&A: Top 50 AI engineer and [Top 50 LLM](https://datadank.com/career/llm-interview-questions/) questions, each with a short answer and a full explanation, linked to lessons on RAG, agents and [LLM-as-a-judge](https://datadank.com/llm/llm-as-a-judge/) with runnable Python. No company loops.
 
 ---
 
