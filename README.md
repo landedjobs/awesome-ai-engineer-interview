@@ -8,12 +8,12 @@
 
 [![Stars](https://img.shields.io/github/stars/landedjobs/awesome-ai-engineer-interview?style=social)](https://github.com/landedjobs/awesome-ai-engineer-interview)
 [![License: MIT](https://img.shields.io/badge/License-MIT-6C2BD9.svg)](LICENSE)
-[![Updated](https://img.shields.io/badge/updated-2026--07-00A86B)](#whats-new-2026-07)
-[![Questions](https://img.shields.io/badge/questions-267-6C2BD9)](questions/)
+[![Updated](https://img.shields.io/badge/updated-2026--11-00A86B)](#whats-new)
+[![Questions](https://img.shields.io/badge/questions-282-6C2BD9)](questions/)
 [![Companies](https://img.shields.io/badge/company%20loops-12-6C2BD9)](company/)
 [![Visit Landed](https://img.shields.io/badge/Visit-Landed-6C2BD9?logo=rocket&logoColor=white)](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=repo-home)
 
-**AI Engineer interview prep for 2026**: 267 questions, 10 worked system designs and the loops at 12 companies, each sourced.
+**AI Engineer interview prep for 2026**: 282 questions, 10 worked system designs and the loops at 17 companies, each sourced.
 
 *Maintained by [Landed](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=repo-home): daily AI-native job matches, agent help with every application, and mock-interview prep.*
 
@@ -87,11 +87,11 @@ flowchart LR
 - [📖 Content, one concept per file](#-content-one-concept-per-file) (9 deep explainers)
 - [❓ Question bank](#-question-bank) (230+ questions, tiered & sourced)
 - [🏗️ Worked system designs](#️-worked-system-designs) (1 rubric + 10 designs)
-- [🏢 Company loops](#-company-loops) (12 companies, sourced questions)
+- [🏢 Company loops](#-company-loops) (17 companies, sourced questions)
 - [📚 Resource hub](#-resource-hub) (typed, annotated, license-noted)
-- [🗓️ Study plan](#️-study-plan) (1-week + 1-month)
+- [🗓️ Study plan](#️-study-plan) (1-week, 1-month and a [six-week plan](study-plans.md))
 - [🎓 Go deeper on landed.jobs](#-go-deeper-on-landedjobs) (13 courses, 60 system designs, roadmaps, salaries)
-- [🆕 What's new (2026-07)](#whats-new-2026-07)
+- [🆕 What's new](#whats-new)
 - [❔ FAQ](#faq)
 - [🤝 Contributing](#contributing)
 
@@ -112,6 +112,8 @@ Mechanism-first explainers with senior-trap `> [!WARNING]` callouts, aha-moment 
 | 07 | [ML & LLM system design](content/07-ml-and-llm-system-design.md) | The reusable rubric, whiteboard estimation, latency budgets, tradeoff reasoning |
 | 08 | [Prompting & structured output](content/08-prompt-engineering-and-structured-output.md) | Static contract vs context, CoT/self-consistency, constrained decoding, schema-as-accuracy |
 | 09 | [Security & guardrails](content/09-security-and-guardrails.md) | Prompt injection, the lethal trifecta, EchoLeak, CaMeL/dual-LLM, OWASP LLM Top 10 |
+| 10 | [The AI-assisted coding round](content/10-ai-assisted-coding-round.md) 🆕 | Which companies run it, what is graded, practising with AI on and off |
+| 11 | [Take-homes and work trials](content/11-take-homes-and-work-trials.md) 🆕 | Build-debug-defend, scoping, what to hand in, how to present it |
 
 ## ❓ Question bank
 
@@ -140,9 +142,9 @@ The design round is where most candidates hand-wave. We give you **one reusable 
 
 ## 🏢 Company loops
 
-Per-company loops with **verbatim, sourced** questions, the three hiring philosophies, signature rounds, and how to prep each. → **[All companies](company/README.md)**
+Per-company loops with **sourced** questions (each claim dated and labelled official, first-person or second-hand), the three hiring philosophies, signature rounds, and how to prep each. → **[All companies](company/README.md)**
 
-[OpenAI](company/openai.md) · [Anthropic](company/anthropic.md) · [Google DeepMind](company/google-deepmind.md) · [Meta](company/meta.md) · [Scale](company/scale.md) · [xAI](company/xai.md) · [Databricks](company/databricks.md) · [Perplexity](company/perplexity.md) · [Cohere](company/cohere.md) · [Mistral](company/mistral.md) · [Cursor](company/cursor.md) · [Nvidia](company/nvidia.md)
+[OpenAI](company/openai.md) · [Anthropic](company/anthropic.md) · [Google DeepMind](company/google-deepmind.md) · [Meta](company/meta.md) · [Scale](company/scale.md) · [xAI](company/xai.md) · [Databricks](company/databricks.md) · [Perplexity](company/perplexity.md) · [Cohere](company/cohere.md) · [Mistral](company/mistral.md) · [Cursor](company/cursor.md) · [Nvidia](company/nvidia.md) · [Sierra](company/sierra.md) · [Harvey](company/harvey.md) · [Glean](company/glean.md) · [Notion](company/notion.md) · [Replit](company/replit.md)
 
 ## 📚 Resource hub
 
@@ -170,6 +172,8 @@ Every link typed (📄 📘 📰 🎬 🧑‍🏫 🛠️ 💻), annotated, and 
 - **Week 2**: RAG + evals ([02](content/02-rag.md), [04](content/04-evals-and-llm-as-judge.md)). Add a golden-set eval harness to your RAG.
 - **Week 3**: Agents + LLMOps + fine-tuning ([03](content/03-agents-and-tool-use.md), [05](content/05-llmops-cost-latency.md), [06](content/06-fine-tuning-and-inference.md)). Build an agent loop with traces.
 - **Week 4**: System design ([all 10 worked designs](answers/)) + [company loops](company/) + security ([09](content/09-security-and-guardrails.md)). Full mock loop.
+
+**Six weeks?** Follow the [six-week plan](study-plans.md), with recruiter questions to ask first and two people's accounts of how they prepared.
 
 ---
 
@@ -203,9 +207,20 @@ Free courses, more system designs and company guides on [landed.jobs](https://ww
 
 ---
 
-## What's new (2026-07)
+## What's new
 
-Most recent first. The 2026 AI Engineer loop looks materially different from 2024.
+Most recent first.
+
+**November 2026**
+
+- **🆕 Two new prep pages:** [the AI-assisted coding round](content/10-ai-assisted-coding-round.md) and [take-homes and work trials](content/11-take-homes-and-work-trials.md).
+- **🆕 Five new company loops:** [Sierra](company/sierra.md), [Harvey](company/harvey.md), [Glean](company/glean.md), [Notion](company/notion.md) and [Replit](company/replit.md).
+- **Every company page re-sourced:** each claim now links its source with an evidence type and a date. Claims we could not trace to a public source were softened or relabelled 🔮.
+- **15 new reported questions** across the topic files, each linked to a public 2025-2026 write-up, and a [six-week study plan](study-plans.md).
+
+**July 2026**
+
+The 2026 AI Engineer loop looks materially different from 2024.
 
 - **🆕 "Eval is the new system design."** Take-homes and onsites now grade your **eval harness** as heavily as your app. We added [content/04](content/04-evals-and-llm-as-judge.md) + [answers/eval-pipeline](answers/eval-pipeline.md) covering pass@k vs pass^k, trajectory vs outcome, judge calibration (Cohen's κ), and CI gating.
 - **🆕 MCP fluency is a resume must-have.** Registries list thousands of servers. New coverage of the handshake, rug-pull / tool-poisoning defenses, and the gateway pattern in [content/03](content/03-agents-and-tool-use.md).
@@ -235,7 +250,7 @@ Yes, if you close the gap deliberately. Build 2–3 real things, a RAG pipeline 
 With a solid Python/ML base: **1 focused week** to cram the loop (see the [1-week plan](#1-week-you-have-an-onsite-booked)). Starting closer to zero on LLM apps: **~1 month** building + studying (see the [1-month plan](#1-month-building-toward-the-loop)).
 
 **What's new for 2026?**
-Evals as a first-class round, MCP, reasoning-model routing, context engineering, agentic eval, and CVE-grade prompt-injection defense. See [What's new](#whats-new-2026-07).
+Evals as a first-class round, MCP, reasoning-model routing, context engineering, agentic eval, and CVE-grade prompt-injection defense. See [What's new](#whats-new).
 
 **Is this better than the existing AI-interview repos?**
 It's the only one we know of that combines **per-lab loops + typed/annotated resources + sourced verbatim questions + a reusable design rubric with 10 worked answers + 2026 topics** in one place. We link the others honestly in [resources.md](resources.md#question-banks--competitor-repos) and tell you where they stop.

@@ -1,33 +1,35 @@
 # Google DeepMind — AI Engineer Interview (2026)
 
-🧠 *"Write the model."* Research depth is the currency here — you present or critique real work, then defend it at Gemini-scale infrastructure.
+🧠 *"Write the model."* Research depth is the currency here. Expect to explain your own work, think out loud and back your impact with data.
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
 > [!NOTE]
-> **The loop at a glance.** Recruiter/HM → coding screen → an **ML-fundamentals deep dive** → a **research interview** (present your past work *or* critique a DeepMind paper) → **system design for Gemini-scale infra**. Typically **3–5 rounds** across **6–8 weeks**, and the process is **decentralized** (teams drive their own bars). The distinguishing rounds are the **research presentation/paper critique** and a **newly added calibration code-review round**.
+> **The loop at a glance.** *Official ([Interviewing at Google DeepMind](https://storage.googleapis.com/deepmind-media/DeepMind.com/Assets/Docs/interviewing-at-google-deepmind.pdf), checked 17 Nov 2026):* four stages, **initial interviews → skills interviews → final interviews → decision and offer**, with detailed, role-specific prep material sent to each candidate. The process takes **4–10 weeks** depending on the role, and can run longer with interviewer availability. Many interviews are competency-based, and the guide suggests the STAR method. **AI policy:** you may use AI to prepare, but not during live interviews or interview tasks unless told otherwise. The guide does not publish the technical rounds for an AI Engineer role, so the exact rounds are **not publicly confirmed**; ask your recruiter.
+>
+> Last checked: 17 Nov 2026.
 
 ## The loop
 
-1. **Recruiter / hiring-manager call.**
-2. **Coding screen** — LeetCode medium/hard, often ML-flavored.
-3. **ML-fundamentals deep dive.**
-4. **Research interview** — present past work or critique a DeepMind paper.
-5. **System design** — Gemini-scale infrastructure.
-6. **Code-review round** (newly added) — calibration on unfamiliar code, PR-style.
+1. **Initial interviews** (official).
+2. **Skills interviews** (official): role-specific; the guide links a coding-prep video for roles that involve coding.
+3. **Final interviews** (official).
+4. **Decision and offer** (official): feedback usually within a few days; check with your recruiter after a week.
 
-Source: candidate reports [105], [103], [4]; decentralized process [4].
+Source: [Interviewing at Google DeepMind](https://storage.googleapis.com/deepmind-media/DeepMind.com/Assets/Docs/interviewing-at-google-deepmind.pdf) (official guide, checked 17 Nov 2026).
+
+What happens inside the skills and final stages for an AI Engineer is **not publicly confirmed**. The earlier version of this page listed a coding screen, an ML-fundamentals deep dive, a research presentation or paper critique, Gemini-scale system design and a newly added code-review round. We could not find a public source for that sequence, so treat those as rounds to ask about, not a confirmed loop.
 
 ## Questions reported in the wild
 
 | Round | Question | Provenance |
 |---|---|---|
-| Coding screen | LeetCode medium/hard, ML-flavored | ✅ Reported — candidate report [105] |
-| ML fundamentals | "Implement a transformer block" | ✅ Reported — candidate report [105] |
-| ML fundamentals | "Calibrated evaluation of multimodal models" | ✅ Reported — candidate report [105] |
-| ML fundamentals | "Design a vector DB for Gemini-scale infrastructure" | ✅ Reported — candidate report [105] |
-| Research | "Critique a DeepMind paper" or "present past work" | ✅ Reported — candidate report [105] |
-| Code review | Calibration review of unfamiliar code / PR-style exercise | ✅ Reported — candidate report [103] |
+| Coding screen | LeetCode medium/hard, ML-flavored | 🔮 Representative · no public source found (re-labelled 17 Nov 2026) |
+| ML fundamentals | "Implement a transformer block" | 🔮 Representative · no public source found (re-labelled 17 Nov 2026) |
+| ML fundamentals | "Calibrated evaluation of multimodal models" | 🔮 Representative · no public source found (re-labelled 17 Nov 2026) |
+| ML fundamentals | "Design a vector DB for Gemini-scale infrastructure" | 🔮 Representative · no public source found (re-labelled 17 Nov 2026) |
+| Research | "Critique a DeepMind paper" or "present past work" | 🔮 Representative · no public source found (re-labelled 17 Nov 2026) |
+| Code review | Calibration review of unfamiliar code / PR-style exercise | 🔮 Representative · no public source found (re-labelled 17 Nov 2026) |
 
 ### 🔮 Representative follow-ups you should expect
 
@@ -40,10 +42,12 @@ Source: candidate reports [105], [103], [4]; decentralized process [4].
 ## What they're really testing
 
 - **Genuine research literacy.** The paper-critique round rewards people who read papers adversarially and can propose the missing experiment.
-- **Calibration.** Both the multimodal-eval question and the new code-review round test whether your confidence tracks reality.
+- **Intellectual honesty.** The official guide says they value curiosity and honesty: say when you're not sure, ask questions and explain your reasoning.
+- **Calibration.** Questions like multimodal evaluation or a code review test whether your confidence tracks reality.
 - **Fundamentals you can implement, not just cite.** A transformer block from scratch is expected.
 - **Scale intuition.** "Vector DB for Gemini-scale" wants sharding, recall/latency trade-offs, and cost — not a toy index.
-- **Fit with a decentralized org.** Different teams weight these differently; tailor to the team you're matching with.
+- **Role-specific bars.** The official guide says each candidate gets role-specific prep material; tailor to the team you're matching with.
+- **Unaided work.** Live interviews and interview tasks are AI-free unless you're told otherwise.
 
 ## How to prep
 
@@ -52,10 +56,12 @@ Source: candidate reports [105], [103], [4]; decentralized process [4].
 - **Vector DB at scale** → [answers/semantic-search.md](../answers/semantic-search.md) (ANN/HNSW, sharding, recall vs latency).
 - **Research presentation** → prepare a 10-minute past-work talk *and* a critique of one recent DeepMind paper, with the falsifying experiment ready.
 - **Code review** → practice ranking bugs by blast radius; see [questions/](../questions/).
+- **Official prep steps** → the guide suggests reading the DeepMind blog, trying Gemini in Google AI Studio, reviewing the job description for competencies, and using data to show your impact.
+- **AI policy** → prepare with AI if you like, but practise solving without it; if a round does allow AI, see [content/10](../content/10-ai-assisted-coding-round.md).
 
 ## Culture signals
 
-**Responsibility, safety, innovation, and benefiting humanity** [78]. Research maturity — knowing a result's limits — reads better than raw enthusiasm.
+**Responsibility, safety, innovation, and benefiting humanity.** DeepMind states its mission as building AI responsibly to benefit humanity ([About Google DeepMind](https://deepmind.google/about/), official). The interviewing guide adds curiosity and intellectual honesty ([official guide](https://storage.googleapis.com/deepmind-media/DeepMind.com/Assets/Docs/interviewing-at-google-deepmind.pdf)). Research maturity, knowing a result's limits, reads better than raw enthusiasm.
 
 ## Cross-links
 

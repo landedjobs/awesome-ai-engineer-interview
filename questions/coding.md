@@ -2,7 +2,7 @@
 
 <sub>⬅ [Back to the Question Bank index](./README.md) · 📖 Deep dive & runnable code: [`content/coding.md`](../content/08-prompt-engineering-and-structured-output.md) · Part of **[awesome-ai-engineer-interview](../README.md)** — maintained by [Landed](https://landed.jobs)</sub>
 
-> **8 patterns.** The coding screen (Round 2) and the AI/ML specialized onsite (Round 4c) ask you to *implement from memory* — attention, a transformer layer, a LoRA adapter — or *build a small service*. These reward muscle memory and clean reasoning under time pressure, not novelty. Each entry below gives the **prompt · difficulty · what it tests · a senior approach outline** (not a full solution — the runnable reference lives in [`content/`](../content/)).
+> **13 patterns** (8 implement-from-memory + 5 reported in 2025-2026). The coding screen (Round 2) and the AI/ML specialized onsite (Round 4c) ask you to *implement from memory* — attention, a transformer layer, a LoRA adapter — or *build a small service*. These reward muscle memory and clean reasoning under time pressure, not novelty. Each entry below gives the **prompt · difficulty · what it tests · a senior approach outline** (not a full solution — the runnable reference lives in [`content/`](../content/)).
 
 ---
 
@@ -125,6 +125,102 @@ Don't read the outline first. Set a timer, write the code from memory, then comp
 - **Never cache state-mutating calls** — a stale hit causes real damage ([llmops.md](./llmops.md) Q7). Contrast with *prefix* caching (exact-prefix KV reuse — [system-design.md](./system-design.md) Q13).
 - Follow-ups: cache-key on normalized query + user scope; metrics on hit-rate and false-hit rate.
 - Reference: [`content/coding.md`](../content/08-prompt-engineering-and-structured-output.md).
+
+---
+
+## Section A: Reported in 2025-2026
+
+> Coding prompts from public candidate write-ups dated 2025-2026, each linked to the account it came from. The evidence line says who reported it, when, and for which role, because several of these come from loops that are not AI engineer loops. The fold holds a senior approach outline written by us, not by the candidate. Last checked: 17 Nov 2026.
+
+---
+
+---
+
+### C9. Call a flaky API, then resolve products through fallback IDs as requirements grow
+> **Difficulty:** 🟡 Medium · `[applied-coding]` · ✅ Reported ([gaijineer, Sierra Software Engineer, Agent](https://gaijineer.co/sierra-software-engineer-agent-interview-experience))
+> **Evidence:** second-hand, an anonymous candidate story published by a blog, updated 9 Apr 2026. Sierra Software Engineer, Agent; technical screen on CoderPad. The post gives this as an example of the multi-part format, not a fixed prompt.
+
+<details><summary>Show approach outline</summary>
+
+**What it tests:** code that stays easy to extend when each part adds a requirement on top of the last.
+
+- Start with a small, correct client: a timeout, bounded retries with backoff and jitter, and an explicit failure result instead of an infinite loop ([llmops.md](./llmops.md) Q1 to Q4).
+- Retry only what is safe to retry. Say why reads are fine and side effects need an idempotency key.
+- For fallback IDs, treat the data as a graph: track visited IDs so cycles end, skip missing IDs with a clear result, and cache resolved products so repeated IDs are not fetched twice.
+- Keep each step a function with a clear input and output, so the next follow-up is an addition, not a rewrite.
+- Run the earlier parts again after each change, so old behaviour still holds.
+</details>
+
+---
+
+### C10. Debug a small agent codebase using a diagram as the spec
+> **Difficulty:** 🟡 Medium · `[agents]` · ✅ Reported ([gaijineer, Sierra Software Engineer, Agent](https://gaijineer.co/sierra-software-engineer-agent-interview-experience))
+> **Evidence:** second-hand, same anonymous Sierra story, updated 9 Apr 2026. The post describes about 4 to 5 files, a diagram that is the source of truth, and about 3 bugs.
+
+<details><summary>Show approach outline</summary>
+
+**What it tests:** reading unfamiliar code fast and fixing the cause, not the symptom.
+
+- Map the diagram to the code first: each state, transition and tool call to a file and function.
+- Run the scenario the interviewer describes and find the first point where behaviour leaves the diagram.
+- Explain the causal bug before you edit. Patch narrowly and rerun the same scenario.
+- Do not "fix" the bug by changing the spec. The diagram is the contract.
+- If time is left, the post says optimisation comes next: name what you would measure before changing anything. Agent failure patterns: [content/03](../content/03-agents-and-tool-use.md).
+</details>
+
+---
+
+### C11. Multi-level object-oriented coding: build a toy backend system level by level
+> **Difficulty:** 🔴 Hard · `[applied-coding]` · ✅ Reported ([Yuan Meng, MLE Interview 2.0](https://github.com/Yuan-Meng/personal_website_2.0/blob/main/content/posts/mle_interviews_2.0/index.md))
+> **Evidence:** first-person, named candidate, post dated 1 Feb 2026, about MLE and research engineer loops in late 2025 and early 2026. She names a database, a KV store, a chat room and a game as example systems, and says OpenAI loops include many OOP problems.
+
+<details><summary>Show approach outline</summary>
+
+**What it tests:** design choices a backend engineer would accept, not just passing tests.
+
+- Read all levels you can see, then design classes for the later ones. Each level adds methods or scale.
+- Model data the way a real service would. Her example: a cart should reference a `product_id`, not copy price and units into each item.
+- Expect concurrency. If two threads read and write the same key, protect it with a lock or make the operation atomic, and say which.
+- Keep tests passing at every level before moving on.
+- Expect a closing question on how you would run and scale this in production.
+</details>
+
+---
+
+### C12. AI-assisted coding: finish and debug a small codebase with unit tests
+> **Difficulty:** 🟡 Medium · `[ai-assisted]` · ✅ Reported ([Yuan Meng, MLE Interview 2.0](https://github.com/Yuan-Meng/personal_website_2.0/blob/main/content/posts/mle_interviews_2.0/index.md))
+> **Evidence:** first-person, named candidate, post dated 1 Feb 2026. Meta AI-assisted coding round: a small toy codebase plus unit tests, with an LLM allowed. She reports passing it.
+
+<details><summary>Show approach outline</summary>
+
+**What it tests:** whether you stay in charge of the change while using the assistant.
+
+- Re-read the instructions and the tests before prompting anything.
+- Tell the interviewer your plan: fix the failing tests, start with a simple implementation, then optimise.
+- Use the assistant for speed, but be ready to explain why each test failed and why the change matches the intended behaviour. She lists both as things to explain.
+- Review every suggested diff. Run the tests after each change, not once at the end.
+- Full round guide: [content/10](../content/10-ai-assisted-coding-round.md) · Meta loop: [company/meta.md](../company/meta.md).
+</details>
+
+---
+
+---
+
+### C13. ML coding: implement a decoding strategy, a KV cache, or a backward pass from scratch
+> **Difficulty:** 🔴 Hard · `[transformers-internals]` · ✅ Reported ([Alisa Liu, Notes on the Industry Job Search](https://alisawuffles.github.io/blog/job-search), [Yuan Meng, MLE Interview 2.0](https://github.com/Yuan-Meng/personal_website_2.0/blob/main/content/posts/mle_interviews_2.0/index.md))
+> **Evidence:** first-person, two named candidates, 2026. Alisa Liu (research roles) calls ML coding her most common interview type: an architecture, a decoding strategy or a classic ML algorithm in PyTorch, sometimes a NumPy backward pass. Yuan Meng lists LoRA, KV cache, beam search and autograd for frontier-lab loops. These are task families, not prompts tied to one employer.
+
+<details><summary>Show approach outline</summary>
+
+**What it tests:** whether you know the primitives well enough to write them without help.
+
+- State tensor shapes and invariants before writing code.
+- **Beam search:** keep the top `b` partial sequences by summed log-probability, expand each, prune back to `b`, and handle finished sequences and length normalisation explicitly.
+- **KV cache:** append each new step's keys and values per layer, run attention for only the new query, and check that the cached output matches a full recompute.
+- **NumPy backward pass:** derive the gradient on paper, implement it, and check it against finite differences on a tiny input.
+- Watch masking and numerical stability (subtract the max before softmax).
+- Practise with AI assistance off, as Alisa Liu recommends. Related: C1 to C4 above and [Stanford CS336 assignment 1](https://github.com/stanford-cs336/assignment1-basics).
+</details>
 
 ---
 

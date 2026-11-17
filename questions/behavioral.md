@@ -2,7 +2,7 @@
 
 <sub>⬅ [Back to the Question Bank index](./README.md) · 📖 Deep dive: [`content/behavioral.md`](../README.md) · Part of **[awesome-ai-engineer-interview](../README.md)** — maintained by [Landed](https://landed.jobs)</sub>
 
-> **9 questions.** Round 4d (45 min) — and at Anthropic, an added **safety/alignment debate**. This round is graded, not a warm-up: it tests whether you can reason about tradeoffs, own a real project end-to-end, disagree productively, and think seriously about AI safety. Structure answers with **STAR** (Situation · Task · Action · Result) and land a concrete, measured result. The alignment questions want a *reasoned position*, not a rehearsed slogan.
+> **11 questions.** Round 4d (45 min) — and at Anthropic, an added **safety/alignment debate**. This round is graded, not a warm-up: it tests whether you can reason about tradeoffs, own a real project end-to-end, disagree productively, and think seriously about AI safety. Structure answers with **STAR** (Situation · Task · Action · Result) and land a concrete, measured result. The alignment questions want a *reasoned position*, not a rehearsed slogan.
 
 ---
 
@@ -85,6 +85,43 @@ Prepare **two or three real stories** you can flex across most prompts (a projec
 **What they're probing:** whether your safety thinking is concrete and current (2026), tied to real incidents, not abstract.
 
 **Senior framing:** Ground it in concrete threats: the **lethal trifecta** (private data + untrusted content + egress — [evals.md](./evals.md) Q6), indirect prompt injection with a real CVE (EchoLeak / GeminiJack zero-click exfiltration — [evals.md](./evals.md) Q9, Q18), irreversible actions ([agents.md](./agents.md) Q25), and compounding errors over long trajectories ([agents.md](./agents.md) Q9). Mitigations are *architectural*: break the trifecta, gate writes behind human approval, dual-LLM control-flow separation, least-privilege tools + MCP pinning, and pass^k reliability gates. Show you know prompt rules alone never reach 0% ASR.
+
+---
+
+## Section C: Reported in 2025-2026
+
+> Prompts from public candidate write-ups dated 2025-2026, each linked to the account it came from. The evidence line says who reported it, when, and for what role. The fold holds a senior framing written by us, not by the candidate. Last checked: 17 Nov 2026.
+
+### Q10. Explain an architecture's business value to a non-technical executive, then handle customer pushback
+> **Difficulty:** 🟡 Medium · `[customer-facing]` · ✅ Reported ([Rung, Databricks loop](https://rungcode.io/loops/databricks))
+> **Evidence:** second-hand, an aggregator page summarising one candidate report, August 2026. Databricks Forward Deployed Engineer loop, customer case round with a field lead.
+
+<details><summary>Show senior framing</summary>
+
+**What they're probing:** whether you can lead with the customer's decision, not your diagram.
+
+- Open with the business problem and one measurable outcome (hours saved, tickets deflected, revenue protected).
+- Describe the smallest architecture that delivers it, in plain words. One sentence per component, each tied to a benefit.
+- Name the cost, the main risk and what adoption needs from the customer. Do not hide uncertainty behind jargon.
+- **Pushback:** restate the concern, ask what is behind it (cost, risk, trust in the model), answer with evidence or a small pilot with a success metric, and agree a next step.
+- Practise with a real project: give the two-minute executive version and the ten-minute engineer version.
+</details>
+
+### Q11. Tell me about a past research project
+> **Difficulty:** 🟡 Medium · `[project-deep-dive]` · ✅ Reported ([Alisa Liu, Notes on the Industry Job Search](https://alisawuffles.github.io/blog/job-search))
+> **Evidence:** first-person, named candidate, 20 Jun 2026. Research discussion rounds in a Research Scientist / Member of Technical Staff search: the interviewer asks about a past project and the conversation follows from there. Employers are not named per round.
+
+<details><summary>Show senior framing</summary>
+
+**What they're probing:** depth, judgment and your own contribution, not a list of papers.
+
+- The problem and why you chose it.
+- Your hypothesis and the baseline you compared against.
+- What you personally did, separated from the team's work.
+- The experiment design, the result and its limits.
+- What you would do next, and which result would change your mind.
+- Alisa Liu also suggests thinking about why you picked your topics and tailoring the pitch to the role. Pick one project and go deep rather than covering five.
+</details>
 
 ---
 

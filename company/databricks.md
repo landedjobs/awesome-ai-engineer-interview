@@ -1,58 +1,77 @@
 # Databricks — AI Engineer Interview (2026)
 
-🏗️ *"Ship the platform."* Data-platform DNA runs through the whole loop — system design is **Spark-flavored** and the bar is "extremely selective."
+🏗️ *"Ship the platform."* Data-platform DNA runs through the whole loop. Databricks publishes its general process and a back-end engineering guide; AI-specific rounds come only from lower-confidence secondary accounts.
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+*Last checked: 17 Nov 2026*
+
 > [!NOTE]
-> **The loop at a glance.** For a Senior Applied AI Engineer role: recruiter → phone coding → **take-home** (some tracks) → **system design** → **ML/Spark** → final. **5–6 stages** over **4–7 weeks**, described by candidates as "extremely selective." The distinguishing round is a **Spark-scale ML system design** — feature stores, online inference, and clusters at 1M QPS.
+> **The loop at a glance.** Officially: a pre-onsite screen (hiring manager, technical assessment or skill evaluation) → an **onsite of four to six interviews** → decision, typically over **two to three months**. Databricks' April 2025 back-end engineering guide lists recruiter screen (30 min) → technical screen (1 hour) → team matching → a **panel of 4-6 one-hour interviews** → hiring committee → references → offer. For AI work specifically, the best public account is a **customer-facing applied-AI (FDE) loop** from August 2026, which rests mostly on single reports. A Spark-scale ML system design round, a take-home, and a 4-7 week timeline for AI engineers are **not publicly confirmed**.
 
 ## The loop
 
-1. **Recruiter call.**
-2. **Phone coding.**
-3. **Take-home** (included on some tracks).
-4. **System design** — platform/infra scale.
-5. **ML / Spark** — ML system design with Spark.
-6. **Final round.**
+What Databricks says officially ([Interviewing at Databricks](https://www.databricks.com/company/careers/interview-prep), official, checked Nov 2026): a pre-onsite screen that may be a hiring-manager screen, technical assessment or skill evaluation; an onsite loop of four to six interviews; interviews over Google Meet. The timeline is typically two to three months, depending on role, region and team.
 
-Source: candidate reports [37], [38], [39].
+Back-end engineering, as published ([engineering interview prep PDF, Apr 2025](https://www.databricks.com/sites/default/files/2025-04/engineering-careers-site-interview-prep-april-2025-002.pdf), official). This is for back-end software engineers, not an AI engineer loop:
+
+1. **Recruiter screen (30 min).**
+2. **Technical screen (1 hour).**
+3. **Team matching** (internal).
+4. **Full panel**: 4-6 one-hour interviews drawn from coding, algorithms, system programming, architecture, a domain deep dive, and a cross-functional or hiring-manager round.
+5. **Hiring committee** (internal), references, offer.
+
+Customer-facing applied AI ([Rung, Databricks FDE loop, Aug 2026](https://rungcode.io/loops/databricks), second-hand, lower confidence). The page covers Forward Deployed Engineer, which it says is often titled AI Engineer. Most rounds rest on **one candidate report**, and the data/SQL round is marked **unverified**:
+
+1. **Technical screen**: Python, data reshaping, pipeline thinking.
+2. **Data and SQL** (unverified): RAG retrieval-failure monitoring, tokenizing agent JSON logs, window functions.
+3. **Applied AI and operations**: judging whether a compound AI system works, including partial credit for multi-turn agents; autoscaling, cold starts, serverless vs provisioned throughput; fine-tuning vs prompting.
+4. **Customer case**: turn an architecture into business value for an executive and handle pushback.
+
+The page gives no take-home, durations or timeline, and says loops vary by team, level and region. AI-assistant policy: **not publicly confirmed**.
+
+A prep guide ([Aced Databricks guide](https://www.aced.io/blog/databricks-interview-process), second-hand, from 14 candidate experiences, updated Nov 2026) describes three main stages (recruiter, technical screen, final) taking about a month, and says ML candidates may get a dataset and a problem and train a model. It mentions a take-home only for product managers.
 
 ## Questions reported in the wild
 
 | Round | Question | Provenance |
 |---|---|---|
-| System design | "Design a feature store for online inference" | ✅ Reported — candidate report [37] |
-| System design | "How do you scale a Spark cluster to 1M QPS?" | ✅ Reported — candidate report [37] |
-| ML system design | ML System Design (with Spark) | ✅ Reported — candidate report [38] |
-| Take-home | Some tracks include a take-home | ✅ Reported — candidate report [38] |
+| Applied AI (FDE) | How do you measure whether a compound AI system works, with partial credit for multi-turn agent interactions? | ✅ Reported · [Rung, FDE, Aug 2026](https://rungcode.io/loops/databricks) (single report) |
+| Applied AI (FDE) | Autoscaling, cold-start latency, serverless vs provisioned throughput | ✅ Reported · [Rung, FDE, Aug 2026](https://rungcode.io/loops/databricks) (single report) |
+| Customer case (FDE) | Translate an architecture into business value for an executive | ✅ Reported · [Rung, FDE, Aug 2026](https://rungcode.io/loops/databricks) (single report) |
+| Data and SQL (FDE) | Monitor retrieval failure in a RAG system; tokenize agent JSON logs | ✅ Reported · [Rung, FDE, Aug 2026](https://rungcode.io/loops/databricks) (marked unverified by the source) |
+| ML case study | Given a dataset and a problem, train a model to solve it | ✅ Reported · [Aced guide, 2026](https://www.aced.io/blog/databricks-interview-process) |
+| System design | "Design a feature store for online inference" | 🔮 Representative (earlier reported label removed: no source we could open) |
+| System design | "How do you scale a Spark cluster to 1M QPS?" | 🔮 Representative (earlier reported label removed: no source we could open) |
 
 ### 🔮 Representative follow-ups you should expect
 
 *Not reported — natural extensions given the loop.*
 
 - After "feature store for online inference": *"How do you guarantee train/serve consistency and bound staleness?"*
-- After "Spark to 1M QPS": *"Where does shuffle become the bottleneck, and what do you change first?"*
+- On Spark scale: *"Where does shuffle become the bottleneck, and what do you change first?"*
 - On the ML system design: *"Where does the eval set live, and how does it gate a model push?"*
+- After compound-system evaluation: *"The agent got the answer right but called the wrong tool twice. How much credit?"*
 
 ## What they're really testing
 
-- **Platform-scale system design.** Feature stores, online inference, and 1M-QPS clusters are the core filter — think data infra, not just models.
-- **Spark fluency.** The ML rounds assume you understand shuffles, partitioning, and cluster scaling.
-- **Train/serve consistency.** Feature-store questions probe whether you've actually run online inference in production.
-- **Take-home execution.** Where present, it rewards clean, runnable, defensible work.
-- **Selectivity endurance.** 5–6 stages over 4–7 weeks favor consistency across a long loop.
+- **Platform-scale system design.** The official architecture round asks for storage, distributed computing, consistency and failure handling. Think data infra, not just models.
+- **Production-quality code.** The official coding round asks for clean organization, test coverage and edge cases.
+- **Evaluation and operations (applied AI).** The FDE account centres on whether a compound system works and how it is served.
+- **Explaining value.** The customer case grades business translation, not model complexity.
+- **Endurance.** Databricks says the process typically takes two to three months.
 
 ## How to prep
 
 - **Feature store / online inference** → [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md) and [content/06](../content/04-evals-and-llm-as-judge.md) for train/serve consistency.
 - **Spark scaling** → know shuffle, partitioning, broadcast joins, and where clusters bottleneck.
 - **ML system design** → [answers/eval-pipeline.md](../answers/eval-pipeline.md) and [answers/semantic-search.md](../answers/semantic-search.md).
+- **Compound-system evals** → [content/04](../content/04-evals-and-llm-as-judge.md); prepare a multi-turn agent eval with partial credit.
 - **Coding warm-ups** → [questions/](../questions/) coding tier.
 
 ## Culture signals
 
-Data-platform first; **"extremely selective."** Show that you reason about data infrastructure and scale, not just model quality.
+Data-platform first. Databricks' own guide stresses production-quality code and clear trade-offs. Show that you reason about data infrastructure and scale, not just model quality.
 
 ## Cross-links
 

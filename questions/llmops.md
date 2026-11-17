@@ -2,7 +2,7 @@
 
 <sub>⬅ [Back to the Question Bank index](./README.md) · 📖 Deep dive: [`content/llmops.md`](../content/05-llmops-cost-latency.md) · Part of **[awesome-ai-engineer-interview](../README.md)** — maintained by [Landed](https://landed.jobs)</sub>
 
-> **29 questions** (20 self-test checkpoints + 9 reported). The operational half of the loop: building a client that survives 429-storms and provider drift, cutting cost/latency without wrecking quality, testing probabilistic output with a ring model, and getting decision-level observability. Theses: **jitter + limiter + breaker beats more retries**, **the stable prefix is your biggest cost lever**, **ship deterministic checks first**, and **cost-per-resolved-task is the metric tied to value**.
+> **30 questions** (20 self-test checkpoints + 10 reported). The operational half of the loop: building a client that survives 429-storms and provider drift, cutting cost/latency without wrecking quality, testing probabilistic output with a ring model, and getting decision-level observability. Theses: **jitter + limiter + breaker beats more retries**, **the stable prefix is your biggest cost lever**, **ship deterministic checks first**, and **cost-per-resolved-task is the metric tied to value**.
 
 ---
 
@@ -370,6 +370,27 @@ Answer, then open the fold. Prompt-versioning and CI eval gates cross-reference 
 ### Q29. Your cheap→expensive cascade's savings evaporated over two months at flat traffic. Diagnose and instrument.
 > **Difficulty:** 🔴 Hard · ✅ Reported ([Mavik](https://www.maviklabs.com/blog/llm-cost-optimization-2026)) — live version of checkpoint Q10
 > **Senior frame:** Escalation rate crept up (harder traffic or scorer drift), so more calls hit the expensive model. Track escalation rate and cost-per-request as trend lines and re-tune the threshold/router — don't switch providers blindly or disable caching. Verbatim of Section B Q10 as an open prompt.
+
+---
+
+## Section F: Reported in 2025-2026
+
+> Questions from public candidate write-ups dated 2025-2026, each linked to the account it came from. The evidence line says who reported it, when, and for what role. The fold holds a strong answer outline written by us, not by the candidate. Last checked: 17 Nov 2026.
+
+### Q30. Model-serving tradeoffs: how do you set autoscaling, handle cold-start latency, and choose serverless or provisioned throughput on cost?
+> **Difficulty:** 🔴 Hard · `[serving-ops]` · ✅ Reported ([Rung, Databricks loop](https://rungcode.io/loops/databricks))
+> **Evidence:** second-hand, an aggregator page summarising one candidate report, August 2026. Databricks Forward Deployed Engineer loop (often titled AI Engineer), applied AI and operations round.
+
+<details><summary>Show answer outline</summary>
+
+- **Start with the workload.** Request rate and its shape (steady, daily peaks, spiky), prompt and output lengths, and the latency target (time to first token and total).
+- **Autoscaling.** Scale on queue depth or in-flight requests, not GPU memory, which a serving engine keeps full by design ([system-design.md](./system-design.md) Q14). Keep a minimum warm replica count for the latency-critical path.
+- **Cold start.** Loading weights onto a GPU takes time, so scale-from-zero shows up as a slow first request. Options: keep warm capacity, pre-pull images and weights, or route to a smaller model while capacity comes up.
+- **Serverless (pay per token).** Fits low or spiky traffic and early products. You pay more per token and get less control over latency.
+- **Provisioned throughput.** Fits steady, high traffic. Cheaper per token at high utilisation, but idle capacity is wasted money. Work out the break-even utilisation with current prices and say it out loud.
+- **Close with a metric.** Cost per resolved task alongside p95 latency and quality, not cost per request alone.
+- Worked design: [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md) · Deep dive: [content/05](../content/05-llmops-cost-latency.md).
+</details>
 
 ---
 

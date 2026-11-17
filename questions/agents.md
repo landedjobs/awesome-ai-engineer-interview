@@ -2,7 +2,7 @@
 
 <sub>⬅ [Back to the Question Bank index](./README.md) · 📖 Deep dive: [`content/agents.md`](../content/03-agents-and-tool-use.md) · Part of **[awesome-ai-engineer-interview](../README.md)** — maintained by [Landed](https://landed.jobs)</sub>
 
-> **29 questions** (20 self-test checkpoints + 9 reported). The agent round is where 2026 loops separate builders from prompt-tinkerers. Core theses: **the tool surface is the model's real API** (optimize tools before prompts), **errors compound multiplicatively over long trajectories**, **de-escalate to the simplest pattern that meets the bar** (workflow before autonomous agent), **MCP is untrusted by default**, and **the window is a cache — durable state lives on disk**.
+> **30 questions** (20 self-test checkpoints + 10 reported). The agent round is where 2026 loops separate builders from prompt-tinkerers. Core theses: **the tool surface is the model's real API** (optimize tools before prompts), **errors compound multiplicatively over long trajectories**, **de-escalate to the simplest pattern that meets the bar** (workflow before autonomous agent), **MCP is untrusted by default**, and **the window is a cache — durable state lives on disk**.
 
 ---
 
@@ -370,6 +370,27 @@ Commit to an answer, then open the fold. For agent-security questions see also [
 ### Q29. Orchestration vs choreography for multi-agent systems?
 > **Difficulty:** 🟡 Medium · ✅ Reported ([Shamim](https://adilshamim8.medium.com/every-ai-engineer-interview-question-you-need-to-know-in-2026-from-100-real-interviews-b5b7ae4b961a))
 > **Senior frame:** Orchestration = a central coordinator dispatches sub-agents and merges results (easier to trace, control, and bound). Choreography = peers react to each other's messages (more flexible, far harder to debug and prone to chatter loops). Default to orchestration unless you have a strong reason; keep one writer for shared state.
+
+---
+
+## Section F: Reported in 2025-2026
+
+> Questions from public candidate write-ups dated 2025-2026, each linked to the account it came from. The evidence line says who reported it, when, and for what role. The fold holds a strong answer outline written by us, not by the candidate. Last checked: 17 Nov 2026.
+
+### Q30. Take-home: build an agent from an API key and a task prompt, then defend it. "Why this architecture? Why this approach to tool calling?"
+> **Difficulty:** 🔴 Hard · `[agent-design]` · ✅ Reported ([gaijineer, Sierra Software Engineer, Agent](https://gaijineer.co/sierra-software-engineer-agent-interview-experience))
+> **Evidence:** second-hand, an anonymous candidate story published by a blog, updated 9 Apr 2026. Sierra Software Engineer, Agent: a take-home, then a 60-minute presentation with many "why" questions. The two quoted questions are from the post.
+
+<details><summary>Show answer outline</summary>
+
+- **Build the simplest thing that meets the task.** Start with a fixed workflow and add model-directed steps only where the branches are not known in advance (Q8, Q22). Say which parts are which.
+- **Tools are the real API.** Clear names, typed arguments, structured errors the loop can act on (Q1, Q2).
+- **Bound the loop.** Step, time and token limits, a clear stop condition, and an escalation path to a person (Q10).
+- **Check results, not claims.** Verify tool outputs and the end state rather than trusting the model's word that it finished.
+- **Ship it runnable.** One command to run, a few tests including tool failures, and a short list of known limits.
+- **For the "why" questions:** name one design you rejected and the evidence that would make you switch. That is what turns a demo into a defence.
+- Worked design: [answers/agentic-workflow.md](../answers/agentic-workflow.md) · Background: [Anthropic, Building effective agents](https://www.anthropic.com/research/building-effective-agents).
+</details>
 
 ---
 

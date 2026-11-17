@@ -8,8 +8,8 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-6C2BD9.svg)](../LICENSE)
-[![Updated](https://img.shields.io/badge/updated-2026--07-00A86B)](#whats-new)
-[![Companies](https://img.shields.io/badge/companies-12-6C2BD9)](#the-companies)
+[![Updated](https://img.shields.io/badge/updated-2026--11-00A86B)](#whats-new)
+[![Companies](https://img.shields.io/badge/companies-17-6C2BD9)](#the-companies)
 [![Visit Landed](https://img.shields.io/badge/Visit-Landed-6C2BD9?logo=rocket&logoColor=white)](https://landed.jobs)
 
 *Maintained by [Landed](https://landed.jobs) — daily AI-native job matches, agent help with every application, and mock-interview prep.*
@@ -26,51 +26,61 @@ Every AI lab claims it hires "the best AI engineers." In practice they hire **th
 
 ## The three hiring philosophies
 
-Drawn from the cross-lab synthesis in our research corpus. Almost every company below sits primarily in one bucket — and the **signature round** is the tell.
+A rough way to read a loop: what the company ships tends to predict the round that decides the offer. Use it as a lens, not a rule; each page has the evidence.
 
-| Philosophy | What you ship | Loop centers on | Labs |
+| Philosophy | What you ship | Loops tend to center on | Companies |
 |---|---|---|---|
-| 🧠 **Write the model** | The intelligence itself — models, training, alignment | Implement-from-scratch primitives (attention, PPO, VAE), mechanistic understanding, research take-homes | OpenAI · Anthropic · Google DeepMind · Meta AI · Mistral · Cohere |
-| 🏗️ **Ship the platform** | The infra models run on | Large-scale serving, distributed training, system design; hardware-software co-design | xAI · Databricks · Nvidia · (Meta GenAI infra) |
-| 🚀 **Build the product** | The app users touch | Applied system craft, end-to-end shipping, product sense | Cursor · Perplexity · (Harvey · Glean) |
+| 🧠 **Write the model** | Models, training, alignment | ML fundamentals, debugging model code, research depth | OpenAI · Anthropic · Google DeepMind · Meta AI · Mistral · Cohere |
+| 🏗️ **Ship the platform** | The infrastructure models run on | Serving, distributed systems, system design | xAI · Databricks · Nvidia |
+| 🚀 **Build the product** | The app users touch | Applied coding on real code, take-homes and work trials, product sense | Cursor · Perplexity · Sierra · Harvey · Glean · Notion · Replit · Scale AI (FDE) |
 
-**The tensions worth knowing:**
-- **Cursor bans AI in interviews. Meta added a "Coding with AI" round.** Prepare both a *no-AI* and a *use-AI-well* answer template.
-- **Anthropic runs the longest single process (5–10h)** yet openly publishes its mechanistic-interpretability take-home.
-- **Mistral's 22% pass rate and OpenAI's 2–8 week loop** signal similar selectivity via very different taxonomies.
-- **Nvidia's hardware-software co-design shift** is the only clear philosophy *change* reported across 2025–2026.
+**The tensions worth knowing (each one sourced on its page):**
+- **AI rules differ by company and by round.** Meta runs an AI-enabled coding round next to an unaided one (second-hand), Notion's AI Applications Engineer loop has an AI-enabled backend round (official), Anthropic asks for no AI in live interviews or take-homes unless told otherwise (official), and Cursor's first technical screens allow no AI beyond autocomplete (June 2025 reporting). Prepare both: see [the AI-assisted coding round](../content/10-ai-assisted-coding-round.md).
+- **Product companies test with real work.** Sierra's agent take-home plus a presentation, Cursor's two-day in-office project and Replit's live-or-take-home exercise all grade how you build and defend something. See [take-homes and work trials](../content/11-take-homes-and-work-trials.md).
+- **Official timelines are long.** Google DeepMind says 4-10 weeks and Databricks two to three months; OpenAI's guide gives about a week for application review and a decision within about a week of finals.
+- **Many popular "facts" about these loops have no public source.** We removed or softened them in the Nov 2026 refresh (for example a "22% pass rate" for Mistral). If a page says *not publicly confirmed*, we looked and could not find a source we could open.
 
 ## Canonical comparison
 
-| Company | Loop length | Signature round | Pass-rate / selectivity | Philosophy | Guide |
+| Company | Loop (best public evidence) | Signature round | Evidence | Philosophy | Guide |
 |---|---|---|---|---|---|
-| **OpenAI** | 4–6h final · 2–8 wk E2E | HM "first 90 days" deep dive + "Design ChatGPT" | Very selective (2–8 wk) | 🧠 Write the model | [openai.md](openai.md) |
-| **Anthropic** | 5–10h · 1–2 days | Mechanistic-interp take-home + dedicated culture round | ~10h, high bar | 🧠 Write the model | [anthropic.md](anthropic.md) |
-| **Google DeepMind** | 4–6h · 6–8 wk | Research presentation / critique a DeepMind paper + new code-review round | Selective, decentralized | 🧠 Write the model | [google-deepmind.md](google-deepmind.md) |
-| **Meta (AI/GenAI)** | 5 coding + 2 research · 4–8 wk | New **"Coding with AI"** round | Committee-gated | 🧠 Write the model | [meta.md](meta.md) |
-| **Scale AI** | 7 rounds · ~14 days median | Take-home ML eval pipeline + FDE messy-data presentation | 7-interview gauntlet | 🏗️ / 🚀 hybrid | [scale.md](scale.md) |
-| **xAI (Grok)** | 4–5 rounds · 1–3 wk | 4-question / 70-min CodeSignal + serving system design | Fast, high-throughput | 🏗️ Ship the platform | [xai.md](xai.md) |
-| **Databricks** | 5–6 stages · 4–7 wk | Spark-flavored ML system design | "Extremely selective" | 🏗️ Ship the platform | [databricks.md](databricks.md) |
-| **Perplexity** | 4–5 rounds · ~11 days avg | In-memory file-system coding + **founder round** | Fast loop, founder-gated | 🚀 Build the product | [perplexity.md](perplexity.md) |
-| **Cohere** | 7 rounds · 4–6 wk | 3-hour language-modelling + coding technical assessment | Long, IC3–IC6 | 🧠 Write the model | [cohere.md](cohere.md) |
-| **Mistral** | 5+ rounds · 3–5 wk | Founder/leader final | **22% pass · 78% rejected** | 🧠 Write the model | [mistral.md](mistral.md) |
-| **Cursor / Anysphere** | 8h paid onsite + 2-day final | **No AI allowed** · 8-hour paid real project | Craft-gated | 🚀 Build the product | [cursor.md](cursor.md) |
-| **Nvidia** | 5 onsite · ~5h | Hardware-software co-design + CUDA-level | Co-design bar | 🏗️ Ship the platform | [nvidia.md](nvidia.md) |
+| **OpenAI** | Review (~1 wk) → intro calls → skills assessment → 4-6h finals over 1-2 days | Skills assessment that varies by team | Official guide + first-person | 🧠 | [openai.md](openai.md) |
+| **Anthropic** | Recruiter → 60-90 min coding challenge → 4-5h onsite (five 1h sessions incl. values) | Values round; published performance take-home | Official AI policy + second-hand | 🧠 | [anthropic.md](anthropic.md) |
+| **Google DeepMind** | Initial → skills → final interviews → offer; 4-10 weeks | Role-specific; rounds not publicly confirmed | Official guide | 🧠 | [google-deepmind.md](google-deepmind.md) |
+| **Meta (AI / GenAI)** | Onsite with one AI-enabled and one unaided coding round (since Oct 2025) | AI-enabled coding | Second-hand + first-person | 🧠 | [meta.md](meta.md) |
+| **Mistral** | First conversation → 2-5 technical exercises → values discussion → references | Exercises that reflect real work | Official only | 🧠 | [mistral.md](mistral.md) |
+| **Cohere** | Recruiter → possible take-home → hiring manager → team (one SWE: 4 rounds, 5 weeks) | Take-home (streaming server, SWE account) | Official + first-person | 🧠 | [cohere.md](cohere.md) |
+| **xAI (Grok)** | Engineer call → live phone screen → 2-3 onsite rounds | Applied coding + serving design | Second-hand only | 🏗️ | [xai.md](xai.md) |
+| **Databricks** | Screen → onsite of 4-6 interviews; 2-3 months | Applied AI and customer case (FDE) | Official + second-hand | 🏗️ | [databricks.md](databricks.md) |
+| **Nvidia** | Recruiter → 1h phone screen → 4-5h onsite; 6-8 weeks | LLM-heavy PyTorch screen; C++ for CUDA roles | Second-hand | 🏗️ | [nvidia.md](nvidia.md) |
+| **Cursor / Anysphere** | Screens (no AI beyond autocomplete) → two-day in-office project with a demo | Two-day work trial | Second-hand | 🚀 | [cursor.md](cursor.md) |
+| **Perplexity** | Reply within 2 weeks → technical assessment → finals → answer within a week | Founder or VP round for senior roles (guide) | Official + second-hand + first-person | 🚀 | [perplexity.md](perplexity.md) |
+| **Scale AI** | FDE: assessment → screen → ~5-round onsite; about two months | Debugging and messy-data rounds (FDE) | Second-hand + first-person, mixed roles | 🏗️ / 🚀 | [scale.md](scale.md) |
+| **Sierra** 🆕 | Recruiter → API coding → agent debugging → agent take-home + 60-min presentation → HM | Build-debug-defend | First-person (one account) | 🚀 | [sierra.md](sierra.md) |
+| **Harvey** 🆕 | No Agents-role loop public; adjacent roles: recruiter → coding → architecture panel | Architecture panel (adjacent role) | Official posting + first-person, adjacent roles | 🚀 | [harvey.md](harvey.md) |
+| **Glean** 🆕 | New grad: screen → recruiter → deep dive → 2h design assignment + algorithms | AI-focused exercise (AI Engineer posting) | First-person (new grad) + official posting | 🚀 | [glean.md](glean.md) |
+| **Notion** 🆕 | Recruiter → 60-min screen → 4-interview onsite incl. AI-enabled backend coding | AI-enabled backend coding | Official guides | 🚀 | [notion.md](notion.md) |
+| **Replit** 🆕 | Recruiter → HM → live or take-home exercise reviewed together → panel | Exercise you review with the team | Official (all roles) | 🚀 | [replit.md](replit.md) |
 
 ## The companies
 
-- [**OpenAI**](openai.md) — 🧠 four-to-six-hour loop, 48h take-home, HM "what would you build in 90 days."
-- [**Anthropic**](anthropic.md) — 🧠 longest single loop, open-sourced mech-interp take-home, dedicated culture round.
-- [**Google DeepMind**](google-deepmind.md) — 🧠 research presentation + newly added calibration code-review round.
-- [**Meta (AI / GenAI)**](meta.md) — 🧠 five coding + two research, plus the new "Coding with AI" round.
-- [**Scale AI**](scale.md) — 🏗️🚀 seven-round loop, ML-eval take-home, forward-deployed messy-data presentation.
-- [**xAI (Grok)**](xai.md) — 🏗️ recruiter → 4-question CodeSignal → three onsite cores, fast.
-- [**Databricks**](databricks.md) — 🏗️ recruiter → coding → take-home → Spark-scale ML system design.
-- [**Perplexity**](perplexity.md) — 🚀 in-memory file-system challenge, AI take-home, founder round, ~11 days.
-- [**Cohere**](cohere.md) — 🧠 seven rounds with a 3-hour language-modelling technical assessment.
-- [**Mistral**](mistral.md) — 🧠 five-plus rounds, 22% pass rate, founder final.
-- [**Cursor / Anysphere**](cursor.md) — 🚀 no AI in interviews, 8-hour paid onsite, 2-day in-office final.
-- [**Nvidia**](nvidia.md) — 🏗️ roofline, distributed-training memory, CUDA kernels, hardware-software co-design.
+- [**OpenAI**](openai.md): 🧠 official process from OpenAI's interview guide, plus first-person research-engineer questions.
+- [**Anthropic**](anthropic.md): 🧠 official AI-use policy, a published performance take-home, five-session onsite with a values round.
+- [**Google DeepMind**](google-deepmind.md): 🧠 four-stage official process, 4-10 weeks, role-specific prep.
+- [**Meta (AI / GenAI)**](meta.md): 🧠 the AI-enabled coding round next to an unaided one.
+- [**Mistral**](mistral.md): 🧠 two to five technical exercises and a values discussion, from Mistral's own page.
+- [**Cohere**](cohere.md): 🧠 official stages plus one senior SWE's four-round account.
+- [**xAI (Grok)**](xai.md): 🏗️ second-hand guides only; where they disagree, the page says so.
+- [**Databricks**](databricks.md): 🏗️ official onsite of four to six interviews over two to three months.
+- [**Nvidia**](nvidia.md): 🏗️ LLM-heavy phone screens, C++ for CUDA-heavy roles.
+- [**Cursor / Anysphere**](cursor.md): 🚀 no AI in first screens, then a two-day project in the office.
+- [**Perplexity**](perplexity.md): 🚀 fast official timelines, a founder or VP round for senior roles.
+- [**Scale AI**](scale.md): 🏗️🚀 forward-deployed and new-grad loops, labelled by role.
+- [**Sierra**](sierra.md) 🆕: 🚀 agent debugging, an agent take-home and a presentation.
+- [**Harvey**](harvey.md) 🆕: 🚀 adjacent-role evidence plus the official Agents posting.
+- [**Glean**](glean.md) 🆕: 🚀 a new-grad loop and the AI Engineer, Data and Evals posting.
+- [**Notion**](notion.md) 🆕: 🚀 official AI Applications Engineer guide with an AI-enabled round.
+- [**Replit**](replit.md) 🆕: 🚀 official process with a live or take-home exercise.
 
 ## Provenance legend
 
@@ -78,16 +88,17 @@ Every question row in a company file is labeled. We never invent questions; repr
 
 | Emoji | Meaning |
 |---|---|
-| ✅ **Reported** | A real question from a public candidate report or write-up, carried near-verbatim, with its bracketed source id. Where the source file provided a URL we link it; otherwise we cite `candidate report [id]`. |
+| ✅ **Reported** | A real question from a public candidate report or write-up, linked inline with its evidence type and date. |
 | 🔮 **Representative** | *Not* a reported question — a follow-up you should expect given the round. Clearly separated in its own subsection. |
 | 🧠 / 🏗️ / 🚀 | Hiring philosophy: write the model / ship the platform / build the product. |
 
 > [!NOTE]
-> Bracketed ids (e.g. `[95]`, `[4]`, `[33]`) are the source markers from our research corpus (two deep-research runs completed 2026-07-01). Some markers are candidate posts on Blind/Reddit/Taro/linkjob.ai without a stable canonical URL — those are cited as `candidate report [id]` rather than linked. This is deliberate: we label the strength of the evidence rather than dress it up.
+> Pages refreshed since Nov 2026 cite each source as an inline link with its evidence type (official, first-person, second-hand) and date, and carry a "Last checked" date. Where we could not find a public source we can open, the claim is softened or marked not publicly confirmed, and the question is labelled 🔮 Representative. We label the strength of the evidence rather than dress it up.
 
 ## What's new
 
-- **2026-07** — Initial per-company section shipped: 12 companies, three-philosophy framing, canonical comparison table, provenance-labeled question tables.
+- **2026-11**: Five new companies (Sierra, Harvey, Glean, Notion, Replit). All 12 existing pages re-sourced: every claim now has an inline link, an evidence type and a date; claims without a public source were softened or relabelled 🔮.
+- **2026-07**: Initial per-company section shipped: 12 companies, three-philosophy framing, canonical comparison table, provenance-labeled question tables.
 
 ---
 

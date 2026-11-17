@@ -2,7 +2,7 @@
 
 <sub>⬅ [Back to the Question Bank index](./README.md) · 📖 Deep dive: [`content/fundamentals.md`](../content/01-llm-fundamentals.md) · Part of **[awesome-ai-engineer-interview](../README.md)** — maintained by [Landed](https://landed.jobs)</sub>
 
-> **50 questions.** The base layer every AI-engineer loop probes: what the model actually *is* (tokens, attention, KV cache, positional encoding, norms, quantization) and how it *behaves* (determinism, context, prompting, structured outputs). If you can't reason from first principles here, the RAG / agents / system-design rounds fall apart.
+> **52 questions** (50 self-test checkpoints + 2 reported). The base layer every AI-engineer loop probes: what the model actually *is* (tokens, attention, KV cache, positional encoding, norms, quantization) and how it *behaves* (determinism, context, prompting, structured outputs). If you can't reason from first principles here, the RAG / agents / system-design rounds fall apart.
 
 ---
 
@@ -802,6 +802,46 @@ Read the question, commit to an answer **before** you open the disclosure block,
 - **Perplexity unchanged** — Perplexity is exactly the metric that misses long-range retrieval and KV-quant drift; necessary but not the key safeguard.
 - ✅ **Needle-in-a-haystack probe** — Both context extension and KV-cache quantization fail first on structured retrieval, not next-token loss; the needle test is the gate that catches it.
 - **Increase temperature** — Temperature doesn't recover lost retrieval; irrelevant to the extension/quantization risk.
+</details>
+
+---
+
+## Section K: Reported in 2025-2026
+
+> Questions from public candidate write-ups dated 2025-2026, each linked to the account it came from. The evidence line says who reported it, when, and for what role. The fold holds a strong answer outline written by us, not by the candidate. Last checked: 17 Nov 2026.
+
+### Q51. What are the different ways to encode positional information?
+
+> **Difficulty:** 🟡 Medium · `[transformers-internals]` · ✅ Reported ([Alisa Liu, Notes on the Industry Job Search](https://alisawuffles.github.io/blog/job-search))
+> **Evidence:** first-person, named candidate, 20 Jun 2026. Asked in a rapid-fire technical discussion during a Research Scientist / Member of Technical Staff search. The employer for this question is not named.
+
+<details><summary>Show answer outline</summary>
+
+- **Why position is needed at all.** Without it, attention scores do not change when you shuffle tokens (Q30). Order has to be injected somewhere.
+- **Learned absolute embeddings.** A trained table, one row per position, added to the token embedding. Simple, but there is no row past the trained maximum length.
+- **Sinusoidal absolute encodings.** Fixed sine and cosine functions of position, added at the input. No parameters, and in principle defined for any position.
+- **Relative schemes.** Add a learned bias per distance bucket to the attention logits (T5 style), or a fixed penalty that grows linearly with distance (ALiBi). Position lives in the scores, not the input.
+- **RoPE.** Rotate each query and key pair by an angle that depends on position, inside every attention layer. The dot product then depends on the relative offset. This is the default in most open models, and context extension (position interpolation, NTK or YaRN style scaling) changes the rotation frequencies.
+- **No explicit encoding.** A causal decoder can recover some order from the mask alone. Worth one sentence, not a recommendation.
+- **The senior trap.** A longer accepted context does not mean every position is used well. Say how you would test it, for example a retrieval probe at many depths (Q50).
+- **Practice.** The [Stanford CS336 assignment 1](https://github.com/stanford-cs336/assignment1-basics) tests include a RoPE implementation. Deep dive: [content/01](../content/01-llm-fundamentals.md).
+</details>
+
+### Q52. What is 5D parallelism?
+
+> **Difficulty:** 🔴 Hard · `[transformers-internals]` · ✅ Reported ([Alisa Liu, Notes on the Industry Job Search](https://alisawuffles.github.io/blog/job-search))
+> **Evidence:** first-person, named candidate, 20 Jun 2026. Same rapid-fire round as Q51. The employer and the interviewer's exact convention are not named.
+
+<details><summary>Show answer outline</summary>
+
+- **Clarify the convention first.** Teams do not all use the same five labels. Ask, or state the set you will use.
+- **Data parallel.** Copy the model, split the batch, all-reduce the gradients. Sharded variants (ZeRO, FSDP) also split optimizer state, gradients and weights to save memory.
+- **Tensor parallel.** Split the matrices inside a layer across devices. Communication happens inside every layer, so keep it within a node on the fastest links.
+- **Pipeline parallel.** Split the layers into stages on different devices. Micro-batches reduce the idle "bubble" at the start and end of each step.
+- **Context (sequence) parallel.** Split the sequence length across devices for long context, for example ring attention passing key and value blocks around.
+- **Expert parallel.** Place the experts of a mixture-of-experts layer on different devices. Tokens are routed with all-to-all communication, and load balance matters.
+- **The tradeoff to say out loud.** Each dimension trades memory for communication. Map the most chatty dimension to the fastest interconnect, then check utilization rather than assuming more dimensions help.
+- **Further reading.** Alisa Liu's resource list includes [How to Scale Your Model](https://jax-ml.github.io/scaling-book/). Deep dive: [content/06](../content/06-fine-tuning-and-inference.md).
 </details>
 
 ---

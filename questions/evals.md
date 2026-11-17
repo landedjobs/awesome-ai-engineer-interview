@@ -2,7 +2,7 @@
 
 <sub>⬅ [Back to the Question Bank index](./README.md) · 📖 Deep dive: [`content/evals.md`](../content/04-evals-and-llm-as-judge.md) · Part of **[awesome-ai-engineer-interview](../README.md)** — maintained by [Landed](https://landed.jobs)</sub>
 
-> **19 questions** (10 self-test checkpoints + 9 reported). *"Eval is the new system design"* is the loudest 2026 hiring signal — evals are first-class deployment artifacts with gates, not offline reports. Theses: **error analysis before metrics**, **trajectory eval sees what output-only eval hides**, **pass^k not pass@k for an SLA**, **an LLM judge is itself a model output that must be calibrated against humans**, and **security tasks invert the grader — a correct refusal is a pass**.
+> **21 questions** (10 self-test checkpoints + 11 reported). *"Eval is the new system design"* is the loudest 2026 hiring signal — evals are first-class deployment artifacts with gates, not offline reports. Theses: **error analysis before metrics**, **trajectory eval sees what output-only eval hides**, **pass^k not pass@k for an SLA**, **an LLM judge is itself a model output that must be calibrated against humans**, and **security tasks invert the grader — a correct refusal is a pass**.
 
 ---
 
@@ -212,6 +212,41 @@ Answer, then open the fold. Judge-calibration questions also appear in [rag.md Q
 ### Q19. How do you evaluate a reasoning model differently from an instruction-tuned model?
 > **Difficulty:** 🟡 Medium · ✅ Reported ([research/01 §5.3](https://openai.com/index/learning-to-reason-with-llms/))
 > **Senior frame:** Reasoning models bill hidden thinking tokens and reshape trajectories, so measure cost/latency including thinking, not just the answer; grade the *final* answer plus (where visible) reasoning soundness; use harder, contamination-controlled benchmarks (AIME/GPQA-style) since easy sets saturate; and watch over-thinking on shallow tasks (route those to a standard model — [llmops.md](./llmops.md)).
+
+---
+
+## Section D: Reported in 2025-2026
+
+> Questions from public candidate write-ups dated 2025-2026, each linked to the account it came from. The evidence line says who reported it, when, and for what role. The fold holds a strong answer outline written by us, not by the candidate. Last checked: 17 Nov 2026.
+
+### Q20. How would you measure whether a compound AI system works, including partial credit across multi-turn agent interactions?
+> **Difficulty:** 🔴 Hard · `[agent-evals]` · ✅ Reported ([Rung, Databricks loop](https://rungcode.io/loops/databricks))
+> **Evidence:** second-hand, an aggregator page summarising one candidate report, August 2026. Databricks Forward Deployed Engineer loop (often titled AI Engineer), applied AI and operations round. The page calls multi-turn agent evaluation the most common weak spot in this loop.
+
+<details><summary>Show answer outline</summary>
+
+- **Define success first.** What final state counts as the task done? That is the gate metric.
+- **Then the partial credit.** List the meaningful intermediate milestones (right tool chosen, right record found, user confirmed) and score them separately, so a run that got halfway is visible.
+- **Separate safety failures from incomplete work.** A harmful action is not "partial credit".
+- **Grade the trajectory too.** Look at steps, tokens and tool-call accuracy, but do not reward extra tool calls for their own sake (Q1, Q12).
+- **Mix graders.** Code checks where possible, a calibrated model judge where needed, and human review for a sample (Q5, Q13).
+- **Repeat trials.** Agents are stochastic, so report pass^k for anything with a reliability target (Q2).
+- Worked design: [answers/eval-pipeline.md](../answers/eval-pipeline.md) · Background: [Anthropic, Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents).
+</details>
+
+### Q21. How do you decide when to discard stale data and retrain, and how do you show the new model is actually better?
+> **Difficulty:** 🟡 Medium · `[data-lifecycle]` · ✅ Reported ([Screna, Perplexity MLE phone screen](https://www.screna.ai/experience/bb00929c-332b-4897-b98e-e92ed1d24b7b))
+> **Evidence:** first-person, anonymous, May 2026. Perplexity senior Machine Learning Engineer, technical phone screen; the only question in that round. An MLE role, not an AI engineer role. The candidate notes they did not tie the answer to business impact fast enough.
+
+<details><summary>Show answer outline</summary>
+
+- **Start from the product.** What does staleness cost the user or the business? Tie every threshold to that.
+- **Detect.** Track input drift and live quality metrics. Drift alone does not prove retraining helps.
+- **Decide.** Compare options: keep all data, reweight recent data, use a sliding window, or retrain on fresh data. Weigh compute and engineering cost against expected gain.
+- **Validate offline** on a held-out set from the most recent period (a time-based split, never random), across key slices.
+- **Validate online** with a canary or A/B test, guardrail metrics and a rollback plan. Set the acceptance rule before you look at results.
+- Related checkpoints: [system-design.md](./system-design.md) Q16 to Q18 and Q20 (monitoring, drift alarms, shadow rollout, retrain cadence).
+</details>
 
 ---
 

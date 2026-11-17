@@ -4,9 +4,9 @@
 
 # The AI Engineer Interview Question Bank
 
-**267 tiered, topic-grouped questions — self-test multiple choice with per-option "why," plus real reported questions with sources.**
+**282 tiered, topic-grouped questions — self-test multiple choice with per-option "why," plus real reported questions with sources.**
 
-[![Questions](https://img.shields.io/badge/questions-267-6C2BD9)](.)
+[![Questions](https://img.shields.io/badge/questions-282-6C2BD9)](.)
 [![Checkpoints](https://img.shields.io/badge/self--test%20checkpoints-196-6C2BD9)](.)
 [![Updated](https://img.shields.io/badge/updated-2026--07-00A86B)](#whats-new)
 [![License: MIT](https://img.shields.io/badge/License-MIT-6C2BD9.svg)](../LICENSE)
@@ -18,7 +18,7 @@
 
 ---
 
-**This question bank is built to be *studied*, not skimmed.** Every one of the **196 checkpoint questions** is multiple choice with a hidden answer key that explains *why each option is right or wrong* — so you can self-test first and learn from the distractors, which encode the exact misconceptions interviewers listen for. On top of those, **71 real reported questions** carry a source link, and the system-design file lists the **10 concrete whiteboard prompts** you'll actually get. Dated for **2026**: reasoning models, MCP, agentic eval, context engineering, the lethal trifecta, GRPO/DPO, FP8, and "eval is the new system design."
+**This question bank is built to be *studied*, not skimmed.** Every one of the **196 checkpoint questions** is multiple choice with a hidden answer key that explains *why each option is right or wrong* — so you can self-test first and learn from the distractors, which encode the exact misconceptions interviewers listen for. On top of those, **91 real reported questions** carry a source link, and the system-design file lists the **10 concrete whiteboard prompts** you'll actually get. Dated for **2026**: reasoning models, MCP, agentic eval, context engineering, the lethal trifecta, GRPO/DPO, FP8, and "eval is the new system design."
 
 > ⭐ **Star this repo** if it helps — it's the fastest way to keep the 2026 updates coming.
 
@@ -48,16 +48,16 @@ flowchart LR
 
 | # | Topic file | Questions | Checkpoints 🔮 | Reported ✅ | What it covers |
 |---|------------|:---------:|:--------------:|:-----------:|----------------|
-| 1 | [**fundamentals.md**](./fundamentals.md) | **50** | 50 | — | LLM behavior, determinism, prompting, structured outputs, transformer internals (tokenization, attention, RoPE, norms, KV cache, quantization, serving) |
-| 2 | [**rag.md**](./rag.md) | **43** | 36 | 7 | Retrieval diagnosis, chunking/parsing, hybrid search + RRF, reranking, vector-index scale, RAG eval, multi-tenant safety, end-to-end design |
-| 3 | [**agents.md**](./agents.md) | **29** | 20 | 9 | Tool design (ACI), single vs multi-agent, error compounding, MCP + gateways, memory & long-running state |
-| 4 | [**evals.md**](./evals.md) | **19** | 10 | 9 | Trajectory vs outcome eval, pass^k, LLM-as-judge calibration, prompt-injection & security evals, the lethal trifecta |
-| 5 | [**llmops.md**](./llmops.md) | **29** | 20 | 9 | Reliable clients (backoff/jitter/breaker/hedging), cost & latency, caching, testing probabilistic output, observability & rollout |
+| 1 | [**fundamentals.md**](./fundamentals.md) | **52** | 50 | 2 | LLM behavior, determinism, prompting, structured outputs, transformer internals (tokenization, attention, RoPE, norms, KV cache, quantization, serving) |
+| 2 | [**rag.md**](./rag.md) | **44** | 36 | 8 | Retrieval diagnosis, chunking/parsing, hybrid search + RRF, reranking, vector-index scale, RAG eval, multi-tenant safety, end-to-end design |
+| 3 | [**agents.md**](./agents.md) | **30** | 20 | 10 | Tool design (ACI), single vs multi-agent, error compounding, MCP + gateways, memory & long-running state |
+| 4 | [**evals.md**](./evals.md) | **21** | 10 | 11 | Trajectory vs outcome eval, pass^k, LLM-as-judge calibration, prompt-injection & security evals, the lethal trifecta |
+| 5 | [**llmops.md**](./llmops.md) | **30** | 20 | 10 | Reliable clients (backoff/jitter/breaker/hedging), cost & latency, caching, testing probabilistic output, observability & rollout |
 | 6 | [**fine-tuning.md**](./fine-tuning.md) | **40** | 30 | 10 | RAG-vs-FT-vs-prompt, data quality/contamination, LoRA/QLoRA/PEFT, DPO/RLHF/GRPO, serving & precision |
-| 7 | [**system-design.md**](./system-design.md) | **40** | 30 | 10 | The interview spine, labels/feature stores, LLM serving latency, monitoring/rollout, funnel & fraud patterns — **plus the 10 concrete design prompts (A–J)** |
-| 8 | [**coding.md**](./coding.md) | **8** | — | 8 | Implement-from-memory: attention, MHA, transformer block, LoRA adapter, bug-fix, ReAct loop, gRPC service, semantic cache |
-| 9 | [**behavioral.md**](./behavioral.md) | **9** | — | 9 | Project ownership, disagreement, 90-days, and the Anthropic-flavored **safety/alignment debate** |
-| | **Total** | **267** | **196** | **71** | |
+| 7 | [**system-design.md**](./system-design.md) | **41** | 30 | 11 | The interview spine, labels/feature stores, LLM serving latency, monitoring/rollout, funnel & fraud patterns — **plus the 10 concrete design prompts (A–J)** |
+| 8 | [**coding.md**](./coding.md) | **13** | — | 13 | Implement-from-memory: attention, MHA, transformer block, LoRA adapter, bug-fix, ReAct loop, gRPC service, semantic cache |
+| 9 | [**behavioral.md**](./behavioral.md) | **11** | — | 11 | Project ownership, disagreement, 90-days, and the Anthropic-flavored **safety/alignment debate** |
+| | **Total** | **282** | **196** | **86** | |
 
 ---
 
@@ -117,12 +117,13 @@ You don't have to go in file order. Pick the path that matches your loop:
 > **Spaced repetition beats cramming.** Do 10–15 checkpoints a day across two files, always answering before you open the fold. Re-do the ones you missed 48 hours later — the per-option "why" is written to make the miss stick.
 
 > [!NOTE]
-> Counts are **live** — the table above reflects the files as shipped. 196 self-test checkpoints + 71 reported = **267 total**, comfortably past the 150+ bar, and the checkpoints span all 196 extracted course-content questions.
+> Counts are **live** — the table above reflects the files as shipped. 196 self-test checkpoints + 86 reported = **282 total**, comfortably past the 150+ bar, and the checkpoints span all 196 extracted course-content questions.
 
 ---
 
 ## What's new
 
+- **2026-11**: 15 reported questions added, each in a "Reported in 2025-2026" section at the end of its topic file and linked to a public candidate write-up dated 2025-2026. New coding prompts include an agent codebase, an AI-assisted round and multi-level OOP. Last checked: 17 Nov 2026.
 - **2026-07** — Initial release. 267 questions across 9 topic files: 196 progressive-disclosure checkpoints (multiple choice + per-option "why") covering LLM features, transformer internals, RAG, agents, evals, LLMOps, fine-tuning, ML/LLM system design; 71 reported questions with sources; the 10 whiteboard design prompts; 8 implement-from-memory coding patterns; and the Anthropic-flavored alignment round. Dated for 2026 topics: reasoning models, MCP, agentic eval, context engineering, lethal trifecta, GRPO/DPO, FP8, "eval is the new system design."
 
 ---
@@ -136,7 +137,7 @@ No. Most 2026 AI-engineer loops (vs research-scientist loops) grade end-to-end *
 With a working AI-engineering background, 2–4 weeks of daily checkpoints plus rehearsing the design prompts is typical. Cold, budget 6–8 weeks and start at [fundamentals.md](./fundamentals.md).
 
 **Are these the *actual* questions I'll get?**
-The 71 **✅ Reported** questions are real, from public write-ups (linked). The 196 **🔮 Representative** checkpoints are ours — modeled on real loops to teach the *reasoning* interviewers probe, not to leak a specific company's set. Learning the "why" transfers; memorizing a leaked list does not.
+The 86 **✅ Reported** questions are real, from public write-ups (linked). The 196 **🔮 Representative** checkpoints are ours — modeled on real loops to teach the *reasoning* interviewers probe, not to leak a specific company's set. Learning the "why" transfers; memorizing a leaked list does not.
 
 **Is fine-tuning still worth learning in 2026 when RAG and long context exist?**
 Yes — but know *when* each applies: RAG for volatile/citable knowledge, fine-tuning for stable behaviour (format/tone/tools) or a capability shift, prompting for per-turn rules. That decision itself is a top reported question ([fine-tuning.md](./fine-tuning.md) Q1–Q5, Q35).

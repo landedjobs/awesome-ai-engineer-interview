@@ -2,7 +2,7 @@
 
 <sub>⬅ [Back to the Question Bank index](./README.md) · 📖 Deep dive: [`content/rag.md`](../content/02-rag.md) · Part of **[awesome-ai-engineer-interview](../README.md)** — maintained by [Landed](https://landed.jobs)</sub>
 
-> **43 questions** (36 self-test checkpoints + 7 reported). RAG is the single most-asked applied topic in a 2026 AI-engineer loop, and "RAG" hides three different systems. The through-line: retrieval is an information-retrieval problem — diagnose with metrics (recall@k / precision@k), fix the cheap levers (chunking, hybrid, reranking) before swapping models, and treat the retrieved channel as an untrusted input.
+> **44 questions** (36 self-test checkpoints + 8 reported). RAG is the single most-asked applied topic in a 2026 AI-engineer loop, and "RAG" hides three different systems. The through-line: retrieval is an information-retrieval problem — diagnose with metrics (recall@k / precision@k), fix the cheap levers (chunking, hybrid, reranking) before swapping models, and treat the retrieved channel as an untrusted input.
 
 ---
 
@@ -614,6 +614,27 @@ Answer first, then open the fold. Note the recurring senior moves: **measure bef
 ### Q43. Is RAG still relevant in the era of long-context LLMs?
 > **Difficulty:** 🟡 Medium · ✅ Reported ([DSPy / dev.to system-design set](https://dev.to/arslan_ah/ai-system-design-interview-questions-chatgpt-rag-llm-inference-and-agents-1doi))
 > **Senior frame:** Yes — long context loses to retrieval on cost (per-token), latency (prefill), recall (lost-in-the-middle), and attribution (no chunk to cite). Long context is a *complement* for holistic single-document tasks, not a replacement for corpus-scale QA. This is Q20 verbatim as a live prompt.
+
+---
+
+## Section I: Reported in 2025-2026
+
+> Questions from public candidate write-ups dated 2025-2026, each linked to the account it came from. The evidence line says who reported it, when, and for what role. The fold holds a strong answer outline written by us, not by the candidate. Last checked: 17 Nov 2026.
+
+### Q44. How would you monitor retrieval failure in a production RAG system?
+> **Difficulty:** 🟡 Medium · `[rag-ops]` · ✅ Reported ([Rung, Databricks loop](https://rungcode.io/loops/databricks))
+> **Evidence:** second-hand, August 2026. Databricks Forward Deployed Engineer loop, data and SQL round. Lower confidence: the page itself says this question came from aggregators, not a first-hand account, and should be read as a theme.
+
+<details><summary>Show answer outline</summary>
+
+- **Separate retrieval from generation.** A bad answer can come from either. Log the query, the retrieved chunk IDs and scores, and the final answer for every request.
+- **Offline signal.** A labelled probe set with known relevant documents. Track recall@k and MRR on it daily, so index or embedding changes show up as a drop (Q27, Q28).
+- **Online signals.** Empty or low-score retrievals, "no answer" rates, user reformulations, thumbs down, and answers whose citations do not support the claim.
+- **Freshness.** Watch the age of retrieved documents and the lag between a source edit and re-indexing (Q35).
+- **Slice it.** By tenant, document type and query type, since failures often sit in one slice.
+- **Alert on change, not on absolute numbers,** and keep a sample of failing traces for review.
+- Deep dive: [content/02](../content/02-rag.md) · Worked design: [answers/rag-over-10m-docs.md](../answers/rag-over-10m-docs.md).
+</details>
 
 ---
 

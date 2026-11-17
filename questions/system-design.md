@@ -2,7 +2,7 @@
 
 <sub>⬅ [Back to the Question Bank index](./README.md) · 📖 Deep dive: [`content/system-design.md`](../content/07-ml-and-llm-system-design.md) · Worked answers: [`answers/`](../answers/) · Part of **[awesome-ai-engineer-interview](../README.md)** — maintained by [Landed](https://landed.jobs)</sub>
 
-> **40 items** (30 self-test checkpoints + 10 design prompts). The signature onsite round (60 min, heavily graded). The spine that survives every prompt: **framing first** (business goal → target function → success metric + counter-metric → scale + latency), then data/features → model → serving/latency → eval/guardrails → monitoring/cost → scaling. The reusable rubric lives in [`content/system-design.md`](../content/07-ml-and-llm-system-design.md); the 8–15 worked designs live in [`answers/`](../answers/).
+> **41 items** (30 self-test checkpoints + 10 design prompts + 1 reported design). The signature onsite round (60 min, heavily graded). The spine that survives every prompt: **framing first** (business goal → target function → success metric + counter-metric → scale + latency), then data/features → model → serving/latency → eval/guardrails → monitoring/cost → scaling. The reusable rubric lives in [`content/system-design.md`](../content/07-ml-and-llm-system-design.md); the 8–15 worked designs live in [`answers/`](../answers/).
 
 ---
 
@@ -584,6 +584,27 @@ Sections A–D are self-test checkpoints on the design *muscles* (framing, data/
 ### Prompt J — Design an AI candidate-sourcing system: 750M profiles, semantic search, <500ms
 > **Difficulty:** 🔴 Hard · ✅ Reported ([Shamim](https://adilshamim8.medium.com/every-ai-engineer-interview-question-you-need-to-know-in-2026-from-100-real-interviews-b5b7ae4b961a))
 > **How a senior frames it:** Billion-scale ANN (IVFPQ + rerank, not HNSW — do the RAM math, [rag.md](./rag.md) Q21, Q34), hybrid semantic + structured filters, a two-stage funnel (Q21) to hit <500ms, freshness via CDC, and fairness/bias counter-metrics on sourcing. The tradeoff: recall at 750M vs the latency budget. → [`answers/design-candidate-sourcing.md`](../answers/)
+
+---
+
+## Section F: Reported in 2025-2026
+
+> Design prompts from public candidate write-ups dated 2025-2026, each linked to the account it came from. The evidence line says who reported it, when, and for what role. The fold holds a senior framing written by us, not by the candidate. **Universal opener still applies: frame first** (Q1). Last checked: 17 Nov 2026.
+
+### Q31. Design a system that lets a chat model handle multiple questions in a single thread
+> **Difficulty:** 🔴 Hard · `[llm-system-design]` · ✅ Reported ([interviewing.io, Anthropic interview process](https://interviewing.io/anthropic-interview-questions))
+> **Evidence:** second-hand, an article based on conversations with Anthropic engineers in 2026. Listed as an example system design prompt, alongside "Design a Claude chat service" (Prompt F above).
+
+<details><summary>Show how a senior frames it</summary>
+
+- **Clarify what "multiple questions" means.** Several questions in one message, or new messages sent while an answer is still streaming? The second is the harder and more likely reading.
+- **Conversation model.** A thread ID, an ordered message log, and a state per request (queued, streaming, done, cancelled). Store the log durably; the model itself is stateless.
+- **Ordering and concurrency.** Decide per product: answer in order (a per-thread queue), answer in parallel (separate requests that share the thread context), or cancel and merge. Make each choice explicit, with idempotent request IDs so retries do not duplicate answers.
+- **Context building.** Each request gets the thread history up to a budget. Summarise or retrieve older turns when the thread grows ([llmops.md](./llmops.md) Q13).
+- **Serving.** Streaming, cancellation that frees GPU work, per-user rate limits, and prefix caching for the shared thread history (Q13).
+- **Measure.** Time to first token per request, answer-to-question mismatch rate, and cost per thread.
+- Related prompts: Prompt A and Prompt F above · Worked design: [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md).
+</details>
 
 ---
 
