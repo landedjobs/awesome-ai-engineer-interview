@@ -122,6 +122,7 @@ If you read nothing else, read these.
 - 📰 [AI system design interview questions](https://dev.to/arslan_ah/ai-system-design-interview-questions-chatgpt-rag-llm-inference-and-agents-1doi) — ChatGPT, RAG, LLM inference, agents.
 - 💻 [alirezadir/Machine-Learning-Interviews](https://github.com/alirezadir/machine-learning-interviews) — MIT · ~8.5k★. Established ML system-design taxonomy (classic-ML heavy).
 - 💻 [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) — Apache-2.0 · 100+★ runnable RAG + agent apps to build portfolio pieces.
+- 🛠️ [Interview Answer Timer](https://makeinterview.com/en/tools/interview-answer-timer) — Hosted tool (software license not stated; stars not applicable). Time two practice answers and compare a self-marked evidence checklist; no login, recording, or AI scoring.
 
 ## Question banks & competitor repos
 
