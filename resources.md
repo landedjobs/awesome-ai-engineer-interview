@@ -123,6 +123,7 @@ If you read nothing else, read these.
 - 💻 [alirezadir/Machine-Learning-Interviews](https://github.com/alirezadir/machine-learning-interviews) — MIT · ~8.5k★. Established ML system-design taxonomy (classic-ML heavy).
 - 💻 [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) — Apache-2.0 · 100+★ runnable RAG + agent apps to build portfolio pieces.
 - 🛠️ [Interview Answer Timer](https://makeinterview.com/en/tools/interview-answer-timer) — Hosted tool (software license not stated; stars not applicable). Time two practice answers and compare a self-marked evidence checklist; no login, recording, or AI scoring.
+- 🛠️ [Aethel practice](https://aethel.pro/practice) — Hosted tool (software license not stated; stars not applicable). Four typed or spoken questions about your own work for a Data and ML role, each checked in the browser against published scoring rules with your words quoted back; no account, nothing saved.
 
 ## Question banks & competitor repos
 
