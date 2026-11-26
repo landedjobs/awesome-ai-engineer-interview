@@ -134,6 +134,7 @@ We link the good ones and tell you where they stop — this repo exists because 
 - 💻 [KalyanKS-NLP/RAG-Interview-Questions-and-Answers-Hub](https://github.com/KalyanKS-NLP/RAG-Interview-Questions-and-Answers-Hub) — Apache-2.0. 100+ RAG Q&A; single-topic depth.
 - 💻 [alexeygrigorev/ai-engineering-field-guide](https://github.com/alexeygrigorev/ai-engineering-field-guide) — ~4k★. Closest scope; real Q4'25/Q1'26 practices, but thin Q&A and no MCP/context-eng.
 - 💻 [DataDank AI engineering interview questions](https://datadank.com/career/ai-engineer-interview-questions/) — free web Q&A: Top 50 AI engineer and [Top 50 LLM](https://datadank.com/career/llm-interview-questions/) questions, each with a short answer and a full explanation, linked to lessons on RAG, agents and [LLM-as-a-judge](https://datadank.com/llm/llm-as-a-judge/) with runnable Python. No company loops.
+- 📰 [Valenx AI Engineer Interview: Top 30 Questions](https://valenx.org/go/free-aie30?utm_source=github&utm_medium=awesome_list&utm_campaign=leadgen1125&utm_content=landedjobs) - free 13-page PDF (email requested, no payment). 30 questions in 6 topics (LLM basics, prompting, RAG, tools and MCP, fine-tuning and evals, production design), each with what the interviewer tests, a 4-step answer framework and the follow-up to expect. A free 4-page, 12-question [cheat sheet](https://valenx.org/go/free-aie?utm_source=github&utm_medium=awesome_list&utm_campaign=leadgen1125&utm_content=landedjobs) is also available. No company loops.
 
 ---
 
