@@ -316,6 +316,13 @@ With strict/constrained decoding the malformed-JSON class is gone, so a retry sh
 - 📄 [Self-Consistency (Wang et al., 2022)](https://arxiv.org/abs/2203.11171) — sample-and-vote over CoT paths; the paper behind the self-consistency answer.
 - 📘 [Anthropic prompt engineering docs](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview) — first-party technique reference: roles, delimiters, positive instructions, self-check.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 Back to [README](../README.md) · [All questions](../questions/README.md) · [Prompting questions](../questions/README.md)

@@ -280,6 +280,13 @@ Use it as a checklist, not a lecture. Lead with **LLM01 prompt injection** (stru
 - 📰 [NeMo Guardrails vs Guardrails AI](https://www.fuzzylabs.ai/blog-post/guardrails-for-llms-a-tooling-comparison) — practical tooling comparison; when to reach for which.
 - 📰 [Simon Willison — prompt-injection series](https://simonwillison.net/tags/prompt-injection/) — the running field log of real attacks; keep it in your feed.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 Back to [README](../README.md) · [All questions](../questions/README.md) · [Security questions](../questions/README.md)

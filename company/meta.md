@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at Meta](https://www.landed.jobs/companies/meta?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full Meta loop guide with a prep plan](https://www.landed.jobs/resources/guides/meta-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 > [!NOTE]
 > **The loop at a glance.** *Second-hand ([Hello Interview](https://www.hellointerview.com/blog/meta-ai-enabled-coding), undated; [interviewing.io](https://interviewing.io/meta-interview-questions), 2026):* Meta began rolling out an **AI-enabled coding** round in **October 2025**. In the onsite it replaces one of the two classic coding rounds; the other stays **unaided**, and the recruiter tells you which is which. The round is **60 minutes** in a CoderPad setup with a multi-file codebase, tests and an AI chat whose model you can switch. Hello Interview reports it for SWE and EM onsites up to E7/M2; interviewing.io describes it as a pilot that not every candidate gets. *One first-person MLE account ([Aced, Senior MLE (L5), US](https://www.aced.io/experiences/meta-facebook-senior-machine-learning-engineer-interview-8719a7)):* a 45-minute phone screen with two coding problems, then four finals: coding, **AI-enabled debugging/coding**, behavioral and ML design. Total elapsed time and an MLE-wide round list are **not publicly confirmed**. More on the format: [content/10](../content/10-ai-assisted-coding-round.md).
 >
@@ -77,6 +79,13 @@ Meta's current values are **Move fast**, **Build awesome things**, **Be direct a
 
 - 🛠️ Worked design: [Agentic workflow / AI-assisted coding](../answers/agentic-workflow.md)
 - 🛠️ Worked design: [Semantic search & ranking](../answers/semantic-search.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

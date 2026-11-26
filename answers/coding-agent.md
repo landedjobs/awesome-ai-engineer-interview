@@ -122,6 +122,13 @@ per_issue ≈ ~8 steps × (~6k in × $3/M + ~800 out × $15/M) growing per step
 - **"The agent keeps re-applying a failing patch."** → Semantic loop detection + progress detection + step/cost caps; escalate with the partial diff.
 - **"How do you stop it from leaking secrets?"** → Scoped ephemeral credentials, sandbox egress control, treat repo/issue text as untrusted; strip outbound URLs.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <div align="center">

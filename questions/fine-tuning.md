@@ -533,6 +533,13 @@ Answer, then open the fold. The serving-side questions here overlap the transcri
 > **Difficulty:** 🔴 Hard · ✅ Reported ([EAGLE](https://arxiv.org/abs/2401.15077), [Anyscale continuous batching](https://www.anyscale.com/blog/continuous-batching-llm-inference))
 > **Senior frame:** A small draft model proposes k tokens, the target verifies them in one pass — lossless, wins at *small batch* where decode is bandwidth-bound (Q23); EAGLE-3 > Medusa > vanilla. Static batching pads to the longest seq and runs to completion (idle waste); continuous batching reschedules every forward pass (Orca 36.9×, vLLM 23× with PagedAttention, Q24).
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <sub>⬅ [Back to the index](./README.md) · Related: [Fundamentals →](./fundamentals.md) · [System design →](./system-design.md) · [LLMOps →](./llmops.md)</sub>

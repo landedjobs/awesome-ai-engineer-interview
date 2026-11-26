@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at Harvey](https://www.landed.jobs/companies/harvey?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full Harvey loop guide with a prep plan](https://www.landed.jobs/resources/guides/harvey-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 *Last checked: 17 Nov 2026*
 
 > [!IMPORTANT]
@@ -88,6 +90,13 @@ Harvey names three values: **decisiveness, simplicity and "Job's Not Finished"**
 - 🛠️ Worked design: [RAG over 10M docs](../answers/rag-over-10m-docs.md)
 - 🛠️ Worked design: [Evaluation pipeline](../answers/eval-pipeline.md)
 - 📄 Guide: [Take-homes and work trials](../content/11-take-homes-and-work-trials.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

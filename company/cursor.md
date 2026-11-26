@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at Cursor](https://www.landed.jobs/companies/cursor?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full Cursor loop guide with a prep plan](https://www.landed.jobs/resources/guides/anysphere-cursor-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 *Last checked: 17 Nov 2026*
 
 > [!NOTE]
@@ -71,6 +73,13 @@ An **applied research lab** obsessed with AI-code-editor craft. **Keeping AI out
 - 🛠️ Worked design: [Agentic workflow / applied AI systems](../answers/agentic-workflow.md)
 - 🛠️ Worked design: [LLM inference at scale / low-latency serving](../answers/llm-inference-at-scale.md)
 - 📘 Concept page: [Take-homes and work trials](../content/11-take-homes-and-work-trials.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

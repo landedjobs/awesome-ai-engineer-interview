@@ -300,6 +300,13 @@ On 8×A100 40GB: FP16 ≈ 140 GB won't fit, int8 ≈ 70 GB fits, **AWQ/GPTQ int4
 - 💻 **HF PEFT** — https://github.com/huggingface/peft — Apache-2.0, ~21k★ — LoRA / adapters / prefix tuning.
 - 📰 **Raschka, "State of LLM Reasoning Model Training"** — https://magazine.sebastianraschka.com/p/the-state-of-llm-reasoning-model-training — best practitioner summary of GRPO/DPO/RLHF.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 Back to [README](../README.md) · [All questions](../questions/README.md) · [Fine-tuning questions](../questions/fine-tuning.md)

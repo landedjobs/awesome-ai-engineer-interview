@@ -246,6 +246,13 @@ Its value is in the *process*, so don't grade only the final answer — grade re
 - 📘 [OpenAI — Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices) — objective → dataset → grader → run + analyze, the practical loop.
 - 💻 [EleutherAI lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — MIT — the standard runner for static benchmarks (the ones that measure the model, not the system).
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 Back to [README](../README.md) · [All questions](../questions/README.md) · [Evals questions](../questions/evals.md)

@@ -202,6 +202,13 @@ The real design prompts, each with how a senior attacks it via the rubric:
 - 📄 [The Tail at Scale](https://research.google/pubs/the-tail-at-scale/) — Dean & Barroso, Google, 2013. The foundational latency-budget + tail-tolerance (hedged requests) reasoning behind the serving/scaling stages.
 - 💻 [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) — Apache-2.0, ~30k★. 100+ reference architectures (RAG, agents) to sanity-check the shape of your design against what people actually ship.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 Back to [README](../README.md) · [All questions](../questions/README.md) · [System design rubric](../answers/system-design-rubric.md) · [System design questions](../questions/system-design.md)

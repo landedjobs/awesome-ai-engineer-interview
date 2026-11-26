@@ -119,6 +119,13 @@ Questions from her post are in this repo as [coding C13, C14 and C16](questions/
 > [!NOTE]
 > **The common thread** is preparation driven by feedback and matched to a real loop. Neither account gives a week-by-week calendar, and neither shows which single activity led to an offer. That is why the six-week plan above is labelled as ours.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <sub>⬅ [Back to the main README](README.md) · [Question bank](questions/README.md) · [Company loops](company/README.md)</sub>

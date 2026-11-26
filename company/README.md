@@ -100,6 +100,13 @@ Every question row in a company file is labeled. We never invent questions; repr
 - **2026-11**: Five new companies (Sierra, Harvey, Glean, Notion, Replit). All 12 existing pages re-sourced: every claim now has an inline link, an evidence type and a date; claims without a public source were softened or relabelled 🔮.
 - **2026-07**: Initial per-company section shipped: 12 companies, three-philosophy framing, canonical comparison table, provenance-labeled question tables.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <div align="center">

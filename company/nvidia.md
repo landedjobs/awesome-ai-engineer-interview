@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at Nvidia](https://www.landed.jobs/companies/nvidia?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full Nvidia loop guide with a prep plan](https://www.landed.jobs/resources/guides/nvidia-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 > [!NOTE]
 > **The loop at a glance.** *Second-hand ([interviewing.io](https://interviewing.io/nvidia-interview-questions), 2026, based on conversations with current and former Nvidia engineers):* a **30-minute** recruiter call (skippable with a strong referral) → a **1-hour** technical phone screen → sometimes a 30-minute hiring-manager call → a **4–5 hour onsite**: two 1-hour coding rounds in CoderPad, one or two 1-hour system-design rounds, and a 1-hour hiring-manager round. About **6–8 weeks** in all. The page says Nvidia is focused on hiring engineers with LLM experience, that some phone screens are entirely LLM questions in PyTorch, and that CUDA-heavy roles may interview in C++. The earlier version of this page described a 2025–2026 shift to hardware-software co-design rounds; we could not find a public source for that, so it is **not publicly confirmed**. No official Nvidia description of the loop or its AI-tool policy was found.
 >
@@ -63,6 +65,13 @@ Source: [interviewing.io](https://interviewing.io/nvidia-interview-questions) (s
 ## Cross-links
 
 - 🛠️ Worked design: [LLM inference at scale / hardware-aware serving](../answers/llm-inference-at-scale.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

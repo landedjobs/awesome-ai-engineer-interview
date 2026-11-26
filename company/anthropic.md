@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at Anthropic](https://www.landed.jobs/companies/anthropic?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full Anthropic loop guide with a prep plan](https://www.landed.jobs/resources/guides/anthropic-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 > [!NOTE]
 > **The loop at a glance.** *Second-hand, 2026 ([interviewing.io](https://interviewing.io/anthropic-interview-questions), based on conversations with Anthropic engineers):* a **30-minute** recruiter call → a **60–90 minute** coding challenge (most reported a 90-minute CodeSignal take-home; referrals may skip it) → a **4–5 hour onsite**, typically five one-hour sessions: hiring manager, CodeSignal coding, system design, role-specific coding and a **company values** round. About **3–4 weeks** in all, by that page's estimate, not Anthropic's. *Official AI policy ([Anthropic candidate AI guidance](https://www.anthropic.com/candidate-ai-guidance), checked 17 Nov 2026):* no AI in live interviews or take-homes **unless Anthropic says otherwise**; AI is encouraged for preparation. The same second-hand page reports an AI-assisted interview being piloted; that does not change the official default.
 >
@@ -84,6 +86,13 @@ Anthropic's published values include **"Put the mission first"**, **"Ignite a ra
 - 🛠️ Worked design: [Support bot](../answers/support-bot.md)
 - 📄 Note: Anthropic has published a version of its [original performance take-home](https://github.com/anthropics/original_performance_takehome). It is a performance-engineering task, not an interp one.
 - 🤖 AI-assisted rounds: [content/10](../content/10-ai-assisted-coding-round.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

@@ -138,6 +138,13 @@ The **lethal trifecta** (Simon Willison): private data + untrusted content + ext
 - **"Walk an MCP handshake."** → client `initialize` → server advertises tools/resources/prompts → `tools/list` → `tools/call`; pin versions, allow-list, gateway for org scale.
 - **"A tool returns 503 vs 404 — what should the agent do?"** → 503 = TRANSIENT (retry after backoff within budget); 404 = PERMANENT (change approach); permission denial = REQUIRES_HUMAN.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <div align="center">

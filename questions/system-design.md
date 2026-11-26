@@ -606,6 +606,13 @@ Sections A–D are self-test checkpoints on the design *muscles* (framing, data/
 - Related prompts: Prompt A and Prompt F above · Worked design: [answers/llm-inference-at-scale.md](../answers/llm-inference-at-scale.md).
 </details>
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <sub>⬅ [Back to the index](./README.md) · Related: [Coding →](./coding.md) · [RAG →](./rag.md) · [Fine-tuning →](./fine-tuning.md)</sub>

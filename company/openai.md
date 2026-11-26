@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at OpenAI](https://www.landed.jobs/companies/openai?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full OpenAI loop guide with a prep plan](https://www.landed.jobs/resources/guides/openai-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 > [!NOTE]
 > **The loop at a glance.** *Official ([OpenAI interview guide](https://openai.com/interview-guide), checked 17 Nov 2026):* application review (about **one week**) → introductory calls with a recruiter or hiring manager → a **skills-based assessment** whose format varies by team (pair coding, take-home, technical test) → **4–6 hours of final interviews with 4–6 people over 1–2 days** → a decision within about **one week**, when references may be requested. A single end-to-end duration is not published; one second-hand guide puts it at **6–8 weeks** ([interviewing.io, 2026](https://interviewing.io/openai-interview-questions)). AI-tool rules **vary by interview**: some formats allow AI, others test you without it, and the prep materials say which. A second-hand guide reports an **agentic coding round in beta** for some candidates ([interviewing.io, 2026](https://interviewing.io/openai-interview-questions)); see [content/10](../content/10-ai-assisted-coding-round.md).
 >
@@ -83,6 +85,13 @@ Alignment with OpenAI's mission and values, plus **collaboration**, **effective 
 - 🛠️ Worked design: [Design ChatGPT / LLM inference at scale](../answers/llm-inference-at-scale.md)
 - 🛠️ Worked design: [Support bot / "Design ChatGPT" product framing](../answers/support-bot.md)
 - 🛠️ Worked design: [Evaluation pipeline](../answers/eval-pipeline.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at Replit](https://www.landed.jobs/companies/replit?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full Replit loop guide with a prep plan](https://www.landed.jobs/resources/guides/replit-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 > [!WARNING]
 > **Thin, general evidence.** The only source we could verify is Replit's **official [interview process page](https://replit.com/interview-process)** (undated, read 17 Nov 2026). It covers all roles at once, from engineers and designers to PMs and AI researchers, interns to leaders. It gives **no AI Engineer specifics, no durations, no timeline and no AI-tool policy**. We found no verifiable candidate reports, so there are no ✅ Reported questions. Ask your recruiter for the format of each stage.
 
@@ -66,6 +68,13 @@ The page says Replit evaluates "real-world skills" and wants to see how you **th
 - 🛠️ Worked design: [Coding agent](../answers/coding-agent.md)
 - 🛠️ Worked design: [Agentic workflow](../answers/agentic-workflow.md)
 - 🛠️ Worked design: [Eval pipeline](../answers/eval-pipeline.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

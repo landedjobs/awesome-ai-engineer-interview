@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at Glean](https://www.landed.jobs/companies/glean?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full Glean loop guide with a prep plan](https://www.landed.jobs/resources/guides/glean-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 > [!WARNING]
 > **Adjacent-role evidence.** The only public full-loop account we could verify is a **new-grad** software engineer loop from **March 2025** (first-person). The AI Engineer evidence is an **official job posting**, which describes requirements and one interview step, not a full loop. Do not read the new-grad rounds as the AI Engineer loop. A full AI Engineer loop is **not publicly confirmed**.
 
@@ -79,6 +81,13 @@ Thin public evidence. The new-grad candidate described engineers and recruiters 
 - 🛠️ Worked design: [Eval pipeline](../answers/eval-pipeline.md)
 - 🛠️ Worked design: [RAG over 10M docs](../answers/rag-over-10m-docs.md)
 - 🛠️ Worked design: [Semantic search](../answers/semantic-search.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

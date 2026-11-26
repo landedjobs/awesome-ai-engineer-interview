@@ -226,6 +226,13 @@ The four links below are from [landedjobs/ai-engineer-portfolio-projects](https:
 - 📰 [Business Insider: Cursor's hiring process](https://www.businessinsider.com/cursor-interview-process-no-ai-on-site-project-coding-tool-2025-6): the two-day team project, as reported in June 2025.
 - 📘 [Replit interview process](https://replit.com/interview-process): an official example of a live or take-home exercise reviewed together.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 Back to [README](../README.md) · [All questions](../questions/README.md) · Previous: [The AI-assisted coding round](10-ai-assisted-coding-round.md)

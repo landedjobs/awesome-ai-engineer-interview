@@ -247,6 +247,13 @@ State assumptions out loud: model, price/million in and out, req/day, tokens in/
 - 📰 [NVIDIA — Mastering LLM Inference Optimization](https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/) — batching, KV-cache, MQA/GQA; the serving-side latency levers.
 - 📰 [Anyscale — Continuous batching for LLM inference](https://www.anyscale.com/blog/continuous-batching-llm-inference) — the ~23× throughput intuition behind modern serving batchers.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 Back to [README](../README.md) · [All questions](../questions/README.md) · [LLMOps questions](../questions/llmops.md)

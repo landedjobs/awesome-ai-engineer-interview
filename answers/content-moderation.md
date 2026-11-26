@@ -125,6 +125,13 @@ High-risk categories run **inline (pre-publish)**; lower-risk run **async** post
 - **"Moderators are overwhelmed."** → Tune uncertainty thresholds to cap the queue; active learning to send only the most informative cases; auto-resolve the confident bands.
 - **"Multimodal / image-in-text evasion."** → OCR + CLIP embeddings into the cheap ML layer; LLM multimodal adjudication for the uncertain band.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <div align="center">

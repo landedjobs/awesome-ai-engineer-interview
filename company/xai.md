@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at xAI](https://www.landed.jobs/companies/xai?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full xAI loop guide with a prep plan](https://www.landed.jobs/resources/guides/xai-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 > [!NOTE]
 > **The loop at a glance.** No official xAI description of the interview was reachable for this refresh, so everything here is **second-hand**, from prep guides that do not name their candidates. *[Aced](https://www.aced.io/blog/xai-interview-process) (updated about Sep 2026):* a **15–30 minute** first call with an engineer → a live technical phone screen (CoderPad-style) → **2–3 onsite rounds** in Palo Alto (applied coding, reading a partly written LLM codebase, system design with implementation) → a follow-up call. Typically **2–3 weeks**. *[TechPrep](https://www.techprep.app/blog/xai-interview-process) (undated, titled 2026):* a written statement of exceptional work, a 15–30 minute screen, a proctored online assessment (often CodeSignal, about **60 minutes**), a 45–60 minute phone screen, then **3–4 onsite rounds**. The two guides disagree on the online assessment, so ask your recruiter. A live-AI policy is **not publicly confirmed**.
 >
@@ -64,6 +66,13 @@ Source: [Aced](https://www.aced.io/blog/xai-interview-process) (second-hand, upd
 ## Cross-links
 
 - 🛠️ Worked design: [LLM inference at scale / serving Grok](../answers/llm-inference-at-scale.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

@@ -223,6 +223,13 @@ Your phase-2 solution picks words to maximise unique characters by trying all su
 - 🛠️ [CodeSignal: AI-assisted assessments](https://codesignal.com/blog/introducing-ai-assisted-coding-assessments-interviews) and [Codility: agentic coding interviews](https://www.codility.com/engineering-skills/agentic-coding-interviews): what the platforms record, so you know your prompts may be reviewed.
 - 📰 [Alisa Liu: notes on the industry job search](https://alisawuffles.github.io/blog/job-search): a named 2026 account; read it for the "practise with AI off" advice.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 Back to [README](../README.md) · [All questions](../questions/README.md) · [Coding questions](../questions/coding.md) · Next: [Take-homes and work trials](11-take-homes-and-work-trials.md)

@@ -4,6 +4,8 @@
 
 ← Back to [main README](../README.md) · [company index](README.md)
 
+**On landed.jobs:** [open roles at Google DeepMind](https://www.landed.jobs/companies/google-deepmind?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-jobs) · [the full Google DeepMind loop guide with a prep plan](https://www.landed.jobs/resources/guides/google-deepmind-ai-interview-guide?utm_source=github&utm_medium=referral&utm_campaign=github-awesome-ai-engineer-interview&utm_content=company-guide)
+
 > [!NOTE]
 > **The loop at a glance.** *Official ([Interviewing at Google DeepMind](https://storage.googleapis.com/deepmind-media/DeepMind.com/Assets/Docs/interviewing-at-google-deepmind.pdf), checked 17 Nov 2026):* four stages, **initial interviews → skills interviews → final interviews → decision and offer**, with detailed, role-specific prep material sent to each candidate. The process takes **4–10 weeks** depending on the role, and can run longer with interviewer availability. Many interviews are competency-based, and the guide suggests the STAR method. **AI policy:** you may use AI to prepare, but not during live interviews or interview tasks unless told otherwise. The guide does not publish the technical rounds for an AI Engineer role, so the exact rounds are **not publicly confirmed**; ask your recruiter.
 >
@@ -67,6 +69,13 @@ What happens inside the skills and final stages for an AI Engineer is **not publ
 
 - 🛠️ Worked design: [Semantic search / vector DB at scale](../answers/semantic-search.md)
 - 🛠️ Worked design: [Evaluation pipeline (calibrated, multimodal)](../answers/eval-pipeline.md)
+
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
 
 ---
 

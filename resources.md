@@ -136,6 +136,13 @@ We link the good ones and tell you where they stop — this repo exists because 
 - 💻 [alexeygrigorev/ai-engineering-field-guide](https://github.com/alexeygrigorev/ai-engineering-field-guide) — ~4k★. Closest scope; real Q4'25/Q1'26 practices, but thin Q&A and no MCP/context-eng.
 - 💻 [DataDank AI engineering interview questions](https://datadank.com/career/ai-engineer-interview-questions/) — free web Q&A: Top 50 AI engineer and [Top 50 LLM](https://datadank.com/career/llm-interview-questions/) questions, each with a short answer and a full explanation, linked to lessons on RAG, agents and [LLM-as-a-judge](https://datadank.com/llm/llm-as-a-judge/) with runnable Python. No company loops.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <div align="center">

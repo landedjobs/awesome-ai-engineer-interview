@@ -282,6 +282,13 @@ Re-evaluations show long context wins single-hop Wikipedia QA, while RAG wins di
 - 📄 [Reciprocal Rank Fusion — Cormack et al. (SIGIR '09)](https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf) — the original RRF paper; why fusing on rank beats tuning a corpus-specific weight.
 - 💻 [KalyanKS-NLP/RAG-Interview-Hub](https://github.com/KalyanKS-NLP/RAG-Interview-Questions-and-Answers-Hub) — Apache-2.0, ~521★ — 100+ topically-organized RAG interview Q&A; the most directly-named RAG-interview repo.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 Back to [README](../README.md) · [All questions](../questions/README.md) · [RAG questions](../questions/rag.md)

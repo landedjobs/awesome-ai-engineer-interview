@@ -145,6 +145,13 @@ Prefix caching drops steady-state GPU util from ~70% → ~25%, letting one node 
 - **"How do you serve 500 fine-tuned variants?"** → multi-LoRA: one base + hot-swapped ~17 MB adapters, shared KV/prefix cache.
 - **"Prefill is starving decode under long prompts."** → chunked prefill (~512-token chunks) or prefill/decode disaggregation when TPOT binds and you have RDMA.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <div align="center">

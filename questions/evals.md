@@ -248,6 +248,13 @@ Answer, then open the fold. Judge-calibration questions also appear in [rag.md Q
 - Related checkpoints: [system-design.md](./system-design.md) Q16 to Q18 and Q20 (monitoring, drift alarms, shadow rollout, retrain cadence).
 </details>
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <sub>⬅ [Back to the index](./README.md) · Related: [Agents →](./agents.md) · [RAG →](./rag.md) · [LLMOps →](./llmops.md)</sub>

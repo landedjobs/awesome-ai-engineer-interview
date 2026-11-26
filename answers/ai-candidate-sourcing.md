@@ -137,6 +137,13 @@ Embedding refresh: CDC re-embed only changed profiles (~few % daily)
 - **"Cold-start a brand-new member with a thin profile."** → Fall back to structured filters + text BM25 until enough signal to embed well.
 - **"How do you rank, given no ground-truth 'best candidate'?"** → Predict downstream positive-response (delayed label); recruiter feedback loop; NDCG on curated golden pairs.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <div align="center">

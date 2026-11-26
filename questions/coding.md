@@ -222,6 +222,13 @@ Don't read the outline first. Set a timer, write the code from memory, then comp
 - Practise with AI assistance off, as Alisa Liu recommends. Related: C1 to C4 above and [Stanford CS336 assignment 1](https://github.com/stanford-cs336/assignment1-basics).
 </details>
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <sub>⬅ [Back to the index](./README.md) · Related: [Fundamentals →](./fundamentals.md) · [Fine-tuning →](./fine-tuning.md) · [Agents →](./agents.md)</sub>

@@ -844,6 +844,13 @@ Read the question, commit to an answer **before** you open the disclosure block,
 - **Further reading.** Alisa Liu's resource list includes [How to Scale Your Model](https://jax-ml.github.io/scaling-book/). Deep dive: [content/06](../content/06-fine-tuning-and-inference.md).
 </details>
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <sub>⬅ [Back to the index](./README.md) · Next: [RAG →](./rag.md) · [Fine-tuning →](./fine-tuning.md) · [System design →](./system-design.md)</sub>

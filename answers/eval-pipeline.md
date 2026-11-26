@@ -132,6 +132,13 @@ CI eval cost      ≈ |golden set| × (system run + judge) per PR
 - **"Quality dropped but nothing changed on our side."** → Silent provider update; CI on pinned versions catches it; production traces isolate interacting changes.
 - **"How big should the golden set be?"** → Start 50–100 from error analysis; grow to 500–1,000 via the flywheel; coverage across failure modes beats raw count.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <div align="center">

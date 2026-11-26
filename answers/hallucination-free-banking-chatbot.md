@@ -131,6 +131,13 @@ monthly  ≈ 1M/day × 30 × $0.012 ≈ $360k/mo → ~$200k with prompt caching 
 - **"Rates changed this morning — stale answer risk?"** → CDC re-index on doc change; last-verified timestamp; time-filter stale content.
 - **"Prove it's safe to auditors."** → Immutable audit log linking every answer to its sources and groundedness score; reproducible eval suite in CI.
 
+
+<!-- landed-apply-cta -->
+<table><tr><td>
+<b>⚡ <a href="https://app.landed.jobs/signup?from=github&amp;cta=github-guide-apply&amp;item=awesome-ai-engineer-interview&amp;utm_source=github&amp;utm_medium=referral&amp;utm_campaign=github-awesome-ai-engineer-interview&amp;utm_content=guide-apply-file">Auto-apply to AI engineer jobs that match you →</a></b><br>
+Upload your resume once. <a href="https://www.landed.jobs">landed</a> finds the roles that fit you and applies within hours of them going live, so you actually hear back.
+</td></tr></table>
+
 ---
 
 <div align="center">
